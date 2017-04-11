@@ -1,0 +1,28 @@
+Command line:
+   test_D_Flip_Flop_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52377
+
+Wed Mar 29 19:57:49 2017
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 855.667 Meg
+
+ Total Signals          : 18
+ Total Nets             : 18
+ Total Signal Drivers   : 10
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 13
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 103
+
+ Total Simulation Time: 0.1875 sec
+
+ Current Memory Usage: 855.667 Meg
+
+Wed Mar 29 20:13:27 2017
+

@@ -1,0 +1,21 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/ise/AndOrNot/AndOrNot_isim_beh.exe" -prj "C:/ise/AndOrNot/AndOrNot_beh.prj" "work.AndOrNot" "work.glbl" 
+ISim O.87xf (signature 0x2f00eba5)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/ise/AndOrNot/AndOrNot.v" into library work
+WARNING:HDLCompiler:329 - "C:/ise/AndOrNot/AndOrNot.v" Line 29: Target <y> of concurrent assignment or output port connection should be a net type.
+Analyzing Verilog file "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:329 - "C:/ise/AndOrNot/AndOrNot.v" Line 29: Target <y> of concurrent assignment or output port connection should be a net type.
+Completed static elaboration
+Fuse Memory Usage: 159884 KB
+Fuse CPU Usage: 187 ms
+Compiling module AndOrNot
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 2 Verilog Units
+Built simulation executable C:/ise/AndOrNot/AndOrNot_isim_beh.exe
+Fuse Memory Usage: 164172 KB
+Fuse CPU Usage: 187 ms

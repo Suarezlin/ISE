@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/ise/gates2/gates2test_isim_beh.exe" -prj "C:/ise/gates2/gates2test_beh.prj" "work.gates2test" "work.glbl" 

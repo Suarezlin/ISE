@@ -1,0 +1,21 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/ise/gates2/gates2test_isim_beh.exe -prj C:/ise/gates2/gates2test_beh.prj work.gates2test work.glbl 
+ISim O.87xf (signature 0x2f00eba5)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/ise/gates2/gates2.v" into library work
+Analyzing Verilog file "C:/ise/gates2/gates2test.v" into library work
+Analyzing Verilog file "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 157256 KB
+Fuse CPU Usage: 156 ms
+Compiling module gates2
+Compiling module gates2test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable C:/ise/gates2/gates2test_isim_beh.exe
+Fuse Memory Usage: 161704 KB
+Fuse CPU Usage: 218 ms

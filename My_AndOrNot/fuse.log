@@ -1,0 +1,21 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/ise/My_AndOrNot/test_My_AndOrNot_isim_beh.exe" -prj "C:/ise/My_AndOrNot/test_My_AndOrNot_beh.prj" "work.test_My_AndOrNot" "work.glbl" 
+ISim O.87xf (signature 0x2f00eba5)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/ise/My_AndOrNot/My_AndOrNot.v" into library work
+Analyzing Verilog file "C:/ise/My_AndOrNot/test_My_AndOrNot.v" into library work
+Analyzing Verilog file "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 159884 KB
+Fuse CPU Usage: 218 ms
+Compiling module My_AndOrNot
+Compiling module test_My_AndOrNot
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable C:/ise/My_AndOrNot/test_My_AndOrNot_isim_beh.exe
+Fuse Memory Usage: 165196 KB
+Fuse CPU Usage: 218 ms

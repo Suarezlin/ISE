@@ -1,0 +1,6 @@
+net "a" loc=N3;
+net "b" loc=E2;
+net "c" loc=F3;
+net "s0" loc=G3;
+net "s1" loc=B4;
+net "y" loc=G1;

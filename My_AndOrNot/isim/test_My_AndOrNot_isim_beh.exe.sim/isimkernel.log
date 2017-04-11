@@ -1,0 +1,10 @@
+Command line:
+   test_My_AndOrNot_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50079
+
+Wed Apr 05 21:35:51 2017
+
+
+ Elaboration Time: 0.046875 sec

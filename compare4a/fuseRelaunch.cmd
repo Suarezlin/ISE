@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/ise/compare4a/compare4a_isim_beh.exe" -prj "C:/ise/compare4a/compare4a_beh.prj" "work.compare4a" "work.glbl" 

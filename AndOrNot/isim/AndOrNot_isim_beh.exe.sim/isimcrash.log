@@ -1,0 +1,5 @@
+Exception at PC 0x0040146D
+Attemped to read address 0x00000028
+Printing stacktrace...
+
+Done

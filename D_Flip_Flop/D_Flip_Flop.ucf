@@ -1,0 +1,5 @@
+NET"clk"LOC="B8";
+NET"D"LOC="N3";
+NET"set"LOC="L3";
+NET"clr"LOC="P11";
+NET"q"LOC="G1";  

@@ -1,0 +1,30 @@
+Command line:
+   AndOrNot_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50058
+
+Wed Apr 05 21:30:17 2017
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 857.895 Meg
+
+ Total Signals          : 17
+ Total Nets             : 18
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 99
+In process AndOrNot.vCont_29_0 
+ FATAL ERROR:ISim: This application has discovered an exceptional condition from which it cannot recover. Process will terminate. To search for possible resolutions to this issue, refer to the Xilinx answer database by going to http://www.xilinx.com/support/answers/index.htm and search with keywords 'ISim' and 'FATAL ERROR'. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+
+ Total Simulation Time: 0.328125 sec
+
+ Current Memory Usage: 905.499 Meg
+
+Wed Apr 05 21:30:32 2017
+

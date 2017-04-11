@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/ise/decode38/test_decode38_isim_beh.exe" -prj "C:/ise/decode38/test_decode38_beh.prj" "work.test_decode38" "work.glbl" 

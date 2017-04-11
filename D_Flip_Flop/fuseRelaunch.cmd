@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/ise/D_Flip_Flop/test_D_Flip_Flop_isim_beh.exe" -prj "C:/ise/D_Flip_Flop/test_D_Flip_Flop_beh.prj" "work.test_D_Flip_Flop" "work.glbl" 

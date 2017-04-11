@@ -1,0 +1,21 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/ise/My_MUX/test_My_MUX_isim_beh.exe" -prj "C:/ise/My_MUX/test_My_MUX_beh.prj" "work.test_My_MUX" "work.glbl" 
+ISim O.87xf (signature 0x2f00eba5)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/ise/My_MUX/My_MUX.v" into library work
+Analyzing Verilog file "C:/ise/My_MUX/test_My_MUX.v" into library work
+Analyzing Verilog file "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 159948 KB
+Fuse CPU Usage: 155 ms
+Compiling module My_MUX
+Compiling module test_My_MUX
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable C:/ise/My_MUX/test_My_MUX_isim_beh.exe
+Fuse Memory Usage: 164236 KB
+Fuse CPU Usage: 202 ms

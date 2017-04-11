@@ -1,0 +1,67 @@
+ISim log file
+Running: C:\ise\D_Flip_Flop\test_D_Flip_Flop_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/ise/D_Flip_Flop/test_D_Flip_Flop_isim_beh.wdb 
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 769971140 ns : File "C:/ise/D_Flip_Flop/test_D_Flip_Flop.v" Line 57
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 2073085200 ns : File "C:/ise/D_Flip_Flop/test_D_Flip_Flop.v" Line 57
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 9534915500 ns : File "C:/ise/D_Flip_Flop/test_D_Flip_Flop.v" Line 57
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 16381065 us : File "C:/ise/D_Flip_Flop/test_D_Flip_Flop.v" Line 57
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 10696616900 ns : File "C:/ise/D_Flip_Flop/test_D_Flip_Flop.v" Line 57
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all

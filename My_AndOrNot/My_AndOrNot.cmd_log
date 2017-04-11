@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/ise/My_AndOrNot/My_AndOrNot.xst" -ofn "C:/ise/My_AndOrNot/My_AndOrNot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc My_AndOrNot.ucf -p xc3s100e-cp132-4 My_AndOrNot.ngc My_AndOrNot.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc My_AndOrNot.ucf -p xc3s100e-cp132-4 My_AndOrNot.ngc My_AndOrNot.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc My_AndOrNot.ucf -p xc3s100e-cp132-4 My_AndOrNot.ngc My_AndOrNot.ngd  
+xst -intstyle ise -ifn "C:/ise/My_AndOrNot/My_AndOrNot.xst" -ofn "C:/ise/My_AndOrNot/My_AndOrNot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc My_AndOrNot.ucf -p xc3s100e-cp132-4 My_AndOrNot.ngc My_AndOrNot.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o My_AndOrNot_map.ncd My_AndOrNot.ngd My_AndOrNot.pcf 
+par -w -intstyle ise -ol high -t 1 My_AndOrNot_map.ncd My_AndOrNot.ncd My_AndOrNot.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml My_AndOrNot.twx My_AndOrNot.ncd -o My_AndOrNot.twr My_AndOrNot.pcf -ucf My_AndOrNot.ucf 
+bitgen -intstyle ise -f My_AndOrNot.ut My_AndOrNot.ncd 

@@ -1,0 +1,11 @@
+net "a[0]" loc=N3;
+net "a[1]" loc=E2;
+net "a[2]" loc=F3;
+net "y[0]" loc=G1;
+net "y[1]" loc=P4;
+net "y[2]" loc=N4;
+net "y[3]" loc=N5;
+net "y[4]" loc=P6;
+net "y[5]" loc=P7;
+net "y[6]" loc=M11;
+net "y[7]" loc=M5;

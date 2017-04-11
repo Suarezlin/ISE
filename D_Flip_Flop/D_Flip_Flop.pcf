@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map O.87xf on Thu Mar 30 09:12:10 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "clr" LOCATE = SITE "P11" LEVEL 1;
+COMP "q" LOCATE = SITE "G1" LEVEL 1;
+COMP "D" LOCATE = SITE "N3" LEVEL 1;
+COMP "set" LOCATE = SITE "L3" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

@@ -1,0 +1,19 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/ise/compare4a/compare4a_isim_beh.exe -prj C:/ise/compare4a/compare4a_beh.prj work.compare4a work.glbl 
+ISim O.87xf (signature 0x2f00eba5)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/ise/compare4a/compare4a.v" into library work
+Analyzing Verilog file "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 160204 KB
+Fuse CPU Usage: 203 ms
+Compiling module compare4a
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 2 Verilog Units
+Built simulation executable C:/ise/compare4a/compare4a_isim_beh.exe
+Fuse Memory Usage: 164652 KB
+Fuse CPU Usage: 249 ms
