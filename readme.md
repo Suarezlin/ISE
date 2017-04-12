@@ -7,7 +7,7 @@
 	下载后解压即可使用
 	![图片](http://ww2.sinaimg.cn/large/006tKfTcly1fejv3cjnqsj30ps0e440d.jpg)
 	####
-2. Clone 使用**(推荐)**
+2. Clone 使用 **(推荐)** 
 	* Windows
 		前往 git 官网下载 git 安装包，地址如下：
 		[git 下载地址](https://git-scm.com/downloads)
