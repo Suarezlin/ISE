@@ -9,27 +9,41 @@
 	####
 2. Clone 使用 **(推荐)** 
 	* Windows
-		前往 git 官网下载 git 安装包，地址如下：####
-		[git 下载地址](https://git-scm.com/downloads)####
-		安装完成之后，打开希望存储文件的目录，按住 shift 键，并点击右键，选择右键菜单中的**在此处打开 git bash**。####
-		在打开的命令行中输入以下命令：####
-		`git clone https://github.com/Suarezlin/ISE.git`####
+		前往 git 官网下载 git 安装包，地址如下：
+		####
+		[git 下载地址](https://git-scm.com/downloads)
+		####
+		安装完成之后，打开希望存储文件的目录，按住 shift 键，并点击右键，选择右键菜单中的**在此处打开 git bash**。
+		####
+		在打开的命令行中输入以下命令：
+		####
+		`git clone https://github.com/Suarezlin/ISE.git`
+		####
 		完成后文件已下载到您的电脑中。
 		####
-	* Mac OS & Linux####
-		Mac OS 和 Linux 1系统中自带了 git ，我们不需要去安装它。####
-		打开 bash 或 terminal ，切换到希望存储的位置，输入以下命令：####
-		`git clone https://github.com/Suarezlin/ISE.git`####
-		如果遇到权限问题，输入以下命令：####
-		`sudo git clone https://github.com/Suarezlin/ISE.git`####
+	* Mac OS & Linux
+		Mac OS 和 Linux 1系统中自带了 git ，我们不需要去安装它。
+		####
+		打开 bash 或 terminal ，切换到希望存储的位置，输入以下命令：
+		####
+		`git clone https://github.com/Suarezlin/ISE.git`
+		####
+		如果遇到权限问题，输入以下命令：
+		####
+		`sudo git clone https://github.com/Suarezlin/ISE.git`
+		####
 		完成后，文件已下载到您的文件夹中。
 		####
 3. 更新同步
 	####
 	如果使用了下载的方式，更新后请重新下载。
 	####
-	采用 Clone 方式：####
-	使用第二步介绍的方法，打开命令行并切换到下载时的目录，输入命令：####
-	`git pull` 或 ####
-	`sudo git pull`(仅限 Mac OS 与 Linux) ####
+	采用 Clone 方式：
+	####
+	使用第二步介绍的方法，打开命令行并切换到下载时的目录，输入命令：
+	####
+	`git pull` 或 
+	####
+	`sudo git pull`(仅限 Mac OS 与 Linux) 
+	####
 	
