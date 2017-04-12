@@ -5,7 +5,7 @@
 ##使用方法
 1. 下载使用 **(不推荐)**
 	下载后解压即可使用
-	![图片](http://ww2.sinaimg.cn/large/006tKfTcly1fejv3cjnqsj30ps0e440d.jp)
+	![图片](http://ww2.sinaimg.cn/large/006tKfTcly1fejv3cjnqsj30ps0e440d.jpg)
 	<br>
 2. Clone 使用**(推荐)**
 	* Windows
