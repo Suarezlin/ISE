@@ -8,13 +8,13 @@ Analyzing Verilog file "C:/ise/x7seg/test_x7seg.v" into library work
 Analyzing Verilog file "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 160140 KB
-Fuse CPU Usage: 218 ms
+Fuse Memory Usage: 160716 KB
+Fuse CPU Usage: 249 ms
 Compiling module x7seg
 Compiling module test_x7seg
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Compiled 3 Verilog Units
 Built simulation executable C:/ise/x7seg/test_x7seg_isim_beh.exe
-Fuse Memory Usage: 164428 KB
-Fuse CPU Usage: 265 ms
+Fuse Memory Usage: 165004 KB
+Fuse CPU Usage: 280 ms

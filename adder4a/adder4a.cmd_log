@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/ise/adder4a/adder4a.xst" -ofn "C:/ise/adder4a/adder4a.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder4a.ucf -p xc3s100e-cp132-4 adder4a.ngc adder4a.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o adder4a_map.ncd adder4a.ngd adder4a.pcf 
+par -w -intstyle ise -ol high -t 1 adder4a_map.ncd adder4a.ncd adder4a.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml adder4a.twx adder4a.ncd -o adder4a.twr adder4a.pcf -ucf adder4a.ucf 
+bitgen -intstyle ise -f adder4a.ut adder4a.ncd 

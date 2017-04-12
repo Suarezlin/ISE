@@ -24,7 +24,7 @@
 static const char *ng0 = "C:/ise/x7seg/test_x7seg.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {1, 0};
-static unsigned int ng3[] = {170U, 0U};
+static unsigned int ng3[] = {10U, 0U};
 
 
 

@@ -1,5 +1,5 @@
 ISim log file
-Running: C:\ise\compare4a\compare4a_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/ise/compare4a/compare4a_isim_beh.wdb 
+Running: C:\ise\compare4a\test_compare4a_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/ise/compare4a/test_compare4a_isim_beh.wdb 
 ISim O.87xf (signature 0x2f00eba5)
 This is a Full version of ISim.
 Time resolution is 1 ps

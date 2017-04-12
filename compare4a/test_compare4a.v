@@ -45,8 +45,9 @@ module test_compare4a;
 
 		// Wait 100 ns for global reset to finish
 		#100;
-        
 		// Add stimulus here
+		a=1010;
+		b=1100;
 	end
       
 endmodule

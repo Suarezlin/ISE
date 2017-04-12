@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-10T22:58:40</DateModified>
+  <DateModified>2017-04-12T12:35:32</DateModified>
   <ModuleName>adder4a</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/ise/adder4a/iseconfig/adder4a.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/ise/adder4a</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/ise/adder4a\</ImplementationReportsDirectory>
   <DateInitialized>2017-04-10T22:58:40</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

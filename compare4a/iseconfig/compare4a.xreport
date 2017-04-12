@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-10T23:14:07</DateModified>
+  <DateModified>2017-04-12T12:42:51</DateModified>
   <ModuleName>compare4a</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/ise/compare4a/iseconfig/compare4a.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/ise/compare4a</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/ise/compare4a\</ImplementationReportsDirectory>
   <DateInitialized>2017-04-10T23:06:48</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

@@ -53,7 +53,7 @@ module test_x7seg;
 		x=0000;
 		clr=0;
 		// Add stimulus here
-		x='hAA;
+		x='h0A;
 	end
 	always #10 clk=~clk;  
 endmodule
