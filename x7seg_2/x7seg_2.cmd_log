@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/ise/x7seg_2/x7seg_2.xst" -ofn "C:/ise/x7seg_2/x7seg_2.syr" 
+xst -intstyle ise -ifn "C:/ise/x7seg_2/x7seg_2.xst" -ofn "C:/ise/x7seg_2/x7seg_2.syr" 
+xst -intstyle ise -ifn "C:/ise/x7seg_2/x7seg_2.xst" -ofn "C:/ise/x7seg_2/x7seg_2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc x7seg_2.ucf -p xc3s100e-cp132-4 x7seg_2.ngc x7seg_2.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o x7seg_2_map.ncd x7seg_2.ngd x7seg_2.pcf 
+par -w -intstyle ise -ol high -t 1 x7seg_2_map.ncd x7seg_2.ncd x7seg_2.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml x7seg_2.twx x7seg_2.ncd -o x7seg_2.twr x7seg_2.pcf -ucf x7seg_2.ucf 
+bitgen -intstyle ise -f x7seg_2.ut x7seg_2.ncd 
