@@ -2,14 +2,14 @@ Command line:
    test_adder4a_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  51601
+     -socket  50290
 
-Mon Apr 10 23:04:00 2017
+Wed Apr 12 14:41:29 2017
 
 
- Elaboration Time: 0.046875 sec
+ Elaboration Time: 0.078125 sec
 
- Current Memory Usage: 858.681 Meg
+ Current Memory Usage: 858.157 Meg
 
  Total Signals          : 20
  Total Nets             : 31
@@ -20,9 +20,9 @@ Mon Apr 10 23:04:00 2017
  Total Traceable Variables  : 20
  Total Scalar Nets and Variables : 119
 
- Total Simulation Time: 0.0625 sec
+ Total Simulation Time: 0.078125 sec
 
- Current Memory Usage: 701.133 Meg
+ Current Memory Usage: 1173.25 Meg
 
-Mon Apr 10 23:06:15 2017
+Wed Apr 12 14:42:15 2017
 
