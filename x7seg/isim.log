@@ -9,11 +9,4 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
 # run all
-Stopped at time : 129191040 ns : File "C:/ise/x7seg/test_x7seg.v" Line 58
-ISim O.87xf (signature 0x2f00eba5)
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-Finished circuit initialization process.
-# run all
-Stopped at time : 68462040 ns : File "C:/ise/x7seg/test_x7seg.v" Line 58
+Stopped at time : 64470080 ns : File "C:/ise/x7seg/test_x7seg.v" Line 58

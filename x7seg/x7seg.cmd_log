@@ -23,3 +23,9 @@ map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o x7seg_m
 par -w -intstyle ise -ol high -t 1 x7seg_map.ncd x7seg.ncd x7seg.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml x7seg.twx x7seg.ncd -o x7seg.twr x7seg.pcf -ucf x7seg.ucf 
 bitgen -intstyle ise -f x7seg.ut x7seg.ncd 
+xst -intstyle ise -ifn "C:/ise/x7seg/x7seg.xst" -ofn "C:/ise/x7seg/x7seg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc x7seg.ucf -p xc3s100e-cp132-4 x7seg.ngc x7seg.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o x7seg_map.ncd x7seg.ngd x7seg.pcf 
+par -w -intstyle ise -ol high -t 1 x7seg_map.ncd x7seg.ncd x7seg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml x7seg.twx x7seg.ncd -o x7seg.twr x7seg.pcf -ucf x7seg.ucf 
+bitgen -intstyle ise -f x7seg.ut x7seg.ncd 

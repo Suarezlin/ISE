@@ -4,13 +4,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: x7seg.prj
 
@@ -223,13 +223,13 @@ Design Statistics
 # IOs                              : 21
 
 Cell Usage :
-# BELS                             : 87
+# BELS                             : 89
 #      GND                         : 1
 #      INV                         : 1
 #      LUT1                        : 19
-#      LUT2                        : 5
-#      LUT3                        : 5
-#      LUT4                        : 12
+#      LUT2                        : 1
+#      LUT3                        : 7
+#      LUT4                        : 16
 #      MUXCY                       : 19
 #      MUXF5                       : 4
 #      VCC                         : 1
@@ -248,9 +248,9 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                       22  out of    960     2%  
+ Number of Slices:                       23  out of    960     2%  
  Number of Slice Flip Flops:             20  out of   1920     1%  
- Number of 4 input LUTs:                 42  out of   1920     2%  
+ Number of 4 input LUTs:                 44  out of   1920     2%  
  Number of IOs:                          21
  Number of bonded IOBs:                  21  out of     83    25%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -294,7 +294,7 @@ Speed Grade: -4
    Minimum period: 4.469ns (Maximum Frequency: 223.764MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 8.053ns
-   Maximum combinational path delay: 9.443ns
+   Maximum combinational path delay: 9.516ns
 
 Timing Detail:
 --------------
@@ -365,9 +365,9 @@ Offset:              8.053ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 182 / 7
+  Total number of paths / destination ports: 204 / 11
 -------------------------------------------------------------------------
-Delay:               9.443ns (Levels of Logic = 6)
+Delay:               9.516ns (Levels of Logic = 6)
   Source:            x<3> (PAD)
   Destination:       a_to_g<6> (PAD)
 
@@ -375,25 +375,25 @@ Delay:               9.443ns (Levels of Logic = 6)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.218   0.762  x_3_IBUF (x_3_IBUF)
-     LUT3:I0->O            1   0.704   0.455  Mrom_COND_2_rom000041 (Mrom_COND_2_rom00004)
+     IBUF:I->O             5   1.218   0.808  x_3_IBUF (x_3_IBUF)
+     LUT3:I0->O            2   0.704   0.482  Mrom_COND_2_rom000041 (Mrom_COND_2_rom00004)
      LUT3:I2->O            1   0.704   0.000  Mmux_digit_4 (Mmux_digit_4)
      MUXF5:I0->O           7   0.321   0.883  Mmux_digit_2_f5 (digit<0>)
      LUT4:I0->O            1   0.704   0.420  Mrom_a_to_g51 (a_to_g_5_OBUF)
      OBUF:I->O                 3.272          a_to_g_5_OBUF (a_to_g<5>)
     ----------------------------------------
-    Total                      9.443ns (6.923ns logic, 2.520ns route)
-                                       (73.3% logic, 26.7% route)
+    Total                      9.516ns (6.923ns logic, 2.593ns route)
+                                       (72.8% logic, 27.2% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.58 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.81 secs
  
 --> 
 
-Total memory usage is 248276 kilobytes
+Total memory usage is 248148 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
