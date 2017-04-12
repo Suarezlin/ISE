@@ -102,13 +102,13 @@ module x7seg(
 	 begin
 	 an=4'b1111;
 	 an[s]=0;
-	 case(s)
-		'b11:an[3]=(0==xtemp[15:12]);
-		'b10:an[2]=(0==xtemp[15:12])&(0==xtemp[11:8]);
-		'b01:an[1]=(0==xtemp[15:12])&(0==xtemp[11:8])&(0==xtemp[7:4]);
-		'b00:an[0]=(0==xtemp[15:12])&(0==xtemp[11:8])&(0==xtemp[7:4])&(0==xtemp[3:0]);
-		default:an[3]=(0==xtemp[15:12]);
-	 endcase
+	 //case(s)
+		//'b11:an[3]=(0==xtemp[15:12]);
+		//'b10:an[2]=(0==xtemp[15:12])&(0==xtemp[11:8]);
+		//'b01:an[1]=(0==xtemp[15:12])&(0==xtemp[11:8])&(0==xtemp[7:4]);
+		//'b00:an[0]=(0==xtemp[15:12])&(0==xtemp[11:8])&(0==xtemp[7:4])&(0==xtemp[3:0]);
+		//default:an[3]=(0==xtemp[15:12]);
+	 //endcase
 	 end
 	 always @(posedge clk or posedge clr)
 		begin
