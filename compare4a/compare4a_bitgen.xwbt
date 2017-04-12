@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\ise\compare4a\compare4a.ncd
+OUTFILE=C:\ise\compare4a\compare4a.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\ise\compare4a
+LICENSE=WebPack
+USER_INFO=__0_0_0

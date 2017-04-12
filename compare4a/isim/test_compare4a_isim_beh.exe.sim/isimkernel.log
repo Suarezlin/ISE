@@ -2,14 +2,14 @@ Command line:
    test_compare4a_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50443
+     -socket  50136
 
-Wed Apr 12 12:44:05 2017
+Wed Apr 12 14:39:54 2017
 
 
  Elaboration Time: 0.0625 sec
 
- Current Memory Usage: 858.755 Meg
+ Current Memory Usage: 858.354 Meg
 
  Total Signals          : 16
  Total Nets             : 24
@@ -20,9 +20,9 @@ Wed Apr 12 12:44:05 2017
  Total Traceable Variables  : 21
  Total Scalar Nets and Variables : 115
 
- Total Simulation Time: 0.078125 sec
+ Total Simulation Time: 0.09375 sec
 
- Current Memory Usage: 858.755 Meg
+ Current Memory Usage: 700.805 Meg
 
-Wed Apr 12 12:44:14 2017
+Wed Apr 12 14:40:57 2017
 

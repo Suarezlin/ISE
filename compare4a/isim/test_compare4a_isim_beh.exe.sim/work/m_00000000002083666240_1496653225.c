@@ -25,6 +25,8 @@ static const char *ng0 = "C:/ise/compare4a/test_compare4a.v";
 static int ng1[] = {0, 0};
 static int ng2[] = {1010, 0};
 static int ng3[] = {1100, 0};
+static int ng4[] = {1, 0};
+static int ng5[] = {1000, 0};
 
 
 
@@ -33,6 +35,7 @@ static void Initial_41_0(char *t0)
     char *t1;
     char *t2;
     char *t3;
+    char *t4;
 
 LAB0:    t1 = (t0 + 1444U);
     t2 = *((char **)t1);
@@ -63,6 +66,34 @@ LAB5:    xsi_set_current_line(49, ng0);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 4);
     xsi_set_current_line(50, ng0);
     t2 = ((char*)((ng3)));
+    t3 = (t0 + 920);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 4);
+    xsi_set_current_line(51, ng0);
+    t2 = (t0 + 1344);
+    xsi_process_wait(t2, 100000LL);
+    *((char **)t1) = &&LAB6;
+    goto LAB1;
+
+LAB6:    xsi_set_current_line(52, ng0);
+    t3 = ((char*)((ng4)));
+    t4 = (t0 + 828);
+    xsi_vlogvar_assign_value(t4, t3, 0, 0, 4);
+    xsi_set_current_line(53, ng0);
+    t2 = ((char*)((ng4)));
+    t3 = (t0 + 920);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 4);
+    xsi_set_current_line(54, ng0);
+    t2 = (t0 + 1344);
+    xsi_process_wait(t2, 100000LL);
+    *((char **)t1) = &&LAB7;
+    goto LAB1;
+
+LAB7:    xsi_set_current_line(55, ng0);
+    t3 = ((char*)((ng4)));
+    t4 = (t0 + 828);
+    xsi_vlogvar_assign_value(t4, t3, 0, 0, 4);
+    xsi_set_current_line(56, ng0);
+    t2 = ((char*)((ng5)));
     t3 = (t0 + 920);
     xsi_vlogvar_assign_value(t3, t2, 0, 0, 4);
     goto LAB1;

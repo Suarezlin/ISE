@@ -48,6 +48,12 @@ module test_compare4a;
 		// Add stimulus here
 		a=1010;
 		b=1100;
+		#100
+		a=0001;
+		b=0001;
+		#100
+		a=0001;
+		b=1000;
 	end
       
 endmodule
