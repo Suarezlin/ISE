@@ -171,11 +171,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1491400488" xil_pn:in_ck="5564554847036502510" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8662142544218239263" xil_pn:start_ts="1491400483">
+    <transform xil_pn:end_ts="1492052643" xil_pn:in_ck="5564554847036502510" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8662142544218239263" xil_pn:start_ts="1492052638">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="My_AndOrNot.lso"/>
       <outfile xil_pn:name="My_AndOrNot.ngc"/>
       <outfile xil_pn:name="My_AndOrNot.ngr"/>
@@ -195,6 +193,8 @@
     <transform xil_pn:end_ts="1491400493" xil_pn:in_ck="1469159363824483686" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4698413896000405681" xil_pn:start_ts="1491400489">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="My_AndOrNot.bld"/>
       <outfile xil_pn:name="My_AndOrNot.ngd"/>
       <outfile xil_pn:name="My_AndOrNot_ngdbuild.xrpt"/>
@@ -204,6 +204,7 @@
     <transform xil_pn:end_ts="1491400496" xil_pn:in_ck="6943162746911826759" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1491400493">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="My_AndOrNot.pcf"/>
@@ -219,6 +220,7 @@
     <transform xil_pn:end_ts="1491400503" xil_pn:in_ck="-284161764281285824" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1491400496">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="My_AndOrNot.ncd"/>
       <outfile xil_pn:name="My_AndOrNot.pad"/>
       <outfile xil_pn:name="My_AndOrNot.par"/>
@@ -233,6 +235,9 @@
     <transform xil_pn:end_ts="1491400511" xil_pn:in_ck="-9178571827691253619" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1491400505">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="My_AndOrNot.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="my_andornot.bgn"/>
@@ -245,6 +250,7 @@
     <transform xil_pn:end_ts="1491400503" xil_pn:in_ck="3797735054055054147" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1491400500">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="My_AndOrNot.twr"/>
       <outfile xil_pn:name="My_AndOrNot.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

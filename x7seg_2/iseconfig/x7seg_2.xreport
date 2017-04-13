@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-12T20:10:27</DateModified>
+  <DateModified>2017-04-13T10:56:40</DateModified>
   <ModuleName>x7seg_2</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/ise/x7seg_2/iseconfig/x7seg_2.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/ise/x7seg_2</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/ise/x7seg_2\</ImplementationReportsDirectory>
   <DateInitialized>2017-04-12T19:11:45</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

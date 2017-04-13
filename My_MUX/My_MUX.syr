@@ -191,14 +191,15 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 6
+# IOs                              : 12
 
 Cell Usage :
-# BELS                             : 3
-#      LUT4                        : 2
+# BELS                             : 6
+#      LUT3                        : 2
+#      LUT4                        : 3
 #      MUXF5                       : 1
-# IO Buffers                       : 6
-#      IBUF                        : 5
+# IO Buffers                       : 12
+#      IBUF                        : 11
 #      OBUF                        : 1
 =========================================================================
 
@@ -207,10 +208,10 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                        1  out of    960     0%  
- Number of 4 input LUTs:                  2  out of   1920     0%  
- Number of IOs:                           6
- Number of bonded IOBs:                   6  out of     83     7%  
+ Number of Slices:                        3  out of    960     0%  
+ Number of 4 input LUTs:                  5  out of   1920     0%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of     83    14%  
 
 ---------------------------
 Partition Resource Summary:
@@ -243,7 +244,7 @@ Speed Grade: -4
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 6.557ns
+   Maximum combinational path delay: 7.856ns
 
 Timing Detail:
 --------------
@@ -251,33 +252,34 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 9 / 1
+  Total number of paths / destination ports: 16 / 1
 -------------------------------------------------------------------------
-Delay:               6.557ns (Levels of Logic = 4)
-  Source:            s0 (PAD)
+Delay:               7.856ns (Levels of Logic = 5)
+  Source:            s2 (PAD)
   Destination:       y (PAD)
 
-  Data Path: s0 to y
+  Data Path: s2 to y
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.218   0.622  s0_IBUF (s0_IBUF)
-     LUT4:I0->O            1   0.704   0.000  y_F (N4)
-     MUXF5:I0->O           1   0.321   0.420  y (y_OBUF)
+     IBUF:I->O             4   1.218   0.762  s2_IBUF (s2_IBUF)
+     LUT3:I0->O            1   0.704   0.000  y84_F (N6)
+     MUXF5:I0->O           1   0.321   0.455  y84 (y84)
+     LUT4:I2->O            1   0.704   0.420  y112 (y_OBUF)
      OBUF:I->O                 3.272          y_OBUF (y)
     ----------------------------------------
-    Total                      6.557ns (5.515ns logic, 1.042ns route)
-                                       (84.1% logic, 15.9% route)
+    Total                      7.856ns (6.219ns logic, 1.637ns route)
+                                       (79.2% logic, 20.8% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.04 secs
+Total CPU time to Xst completion: 3.07 secs
  
 --> 
 
-Total memory usage is 247956 kilobytes
+Total memory usage is 248084 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

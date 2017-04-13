@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-05T21:54:15</DateModified>
+  <DateModified>2017-04-13T11:03:19</DateModified>
   <ModuleName>My_AndOrNot</ModuleName>
   <SummaryTimeStamp>2017-04-05T21:40:17</SummaryTimeStamp>
   <SavedFilePath>C:/ise/My_AndOrNot/iseconfig/My_AndOrNot.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/ise/My_AndOrNot</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/ise/My_AndOrNot\</ImplementationReportsDirectory>
   <DateInitialized>2017-04-05T21:31:10</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

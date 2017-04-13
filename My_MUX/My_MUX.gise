@@ -42,6 +42,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="My_MUX.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="My_MUX.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="My_MUX.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="My_MUX_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="My_MUX_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="My_MUX_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="My_MUX_map.mrp" xil_pn:subbranch="Map"/>
@@ -170,11 +171,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1491399881" xil_pn:in_ck="3441700063843" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6755755580693930188" xil_pn:start_ts="1491399876">
+    <transform xil_pn:end_ts="1492052766" xil_pn:in_ck="3441700063843" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6755755580693930188" xil_pn:start_ts="1492052761">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="My_MUX.lso"/>
       <outfile xil_pn:name="My_MUX.ngc"/>
       <outfile xil_pn:name="My_MUX.ngr"/>
@@ -194,6 +193,8 @@
     <transform xil_pn:end_ts="1491399887" xil_pn:in_ck="8030851550616669456" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1195189730576792068" xil_pn:start_ts="1491399883">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="My_MUX.bld"/>
       <outfile xil_pn:name="My_MUX.ngd"/>
       <outfile xil_pn:name="My_MUX_ngdbuild.xrpt"/>
@@ -203,6 +204,7 @@
     <transform xil_pn:end_ts="1491399891" xil_pn:in_ck="8032383129601933905" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1491399887">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="My_MUX.pcf"/>
@@ -218,6 +220,7 @@
     <transform xil_pn:end_ts="1491399899" xil_pn:in_ck="7642683705584733226" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1491399891">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="My_MUX.ncd"/>
       <outfile xil_pn:name="My_MUX.pad"/>
       <outfile xil_pn:name="My_MUX.par"/>
@@ -232,6 +235,9 @@
     <transform xil_pn:end_ts="1491399908" xil_pn:in_ck="3748011369519682" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1491399901">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="My_MUX.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="my_mux.bgn"/>
@@ -244,6 +250,7 @@
     <transform xil_pn:end_ts="1491399899" xil_pn:in_ck="7830214703547026637" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1491399896">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="My_MUX.twr"/>
       <outfile xil_pn:name="My_MUX.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

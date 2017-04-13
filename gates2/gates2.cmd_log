@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/ise/gates2/gates2.xst" -ofn "C:/ise/gates2/gates2.syr" 

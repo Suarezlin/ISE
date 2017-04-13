@@ -25,5 +25,5 @@ module My_AndOrNot(
 		input d,
 		output y
     );
-	 assign y = ~((a&b)|(c&d));
+	 assign y = ~((a|b)|(c|d));
 endmodule
