@@ -1,0 +1,10 @@
+[Inputs]
+=a[3:0]=
+=b[3:0]=
+[Outputs]
+c4
+=s[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel adder
+

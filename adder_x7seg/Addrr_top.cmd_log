@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/ise/adder_x7seg/Addrr_top.xst" -ofn "C:/ise/adder_x7seg/Addrr_top.syr" 
+xst -intstyle ise -ifn "C:/ise/adder_x7seg/Addrr_top.xst" -ofn "C:/ise/adder_x7seg/Addrr_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder_x7seg.ucf -p xc3s100e-cp132-4 Addrr_top.ngc Addrr_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Addrr_top_map.ncd Addrr_top.ngd Addrr_top.pcf 
+par -w -intstyle ise -ol high -t 1 Addrr_top_map.ncd Addrr_top.ncd Addrr_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Addrr_top.twx Addrr_top.ncd -o Addrr_top.twr Addrr_top.pcf -ucf adder_x7seg.ucf 
+bitgen -intstyle ise -f Addrr_top.ut Addrr_top.ncd 
+xst -intstyle ise -ifn "C:/ise/adder_x7seg/Addrr_top.xst" -ofn "C:/ise/adder_x7seg/Addrr_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc adder_x7seg.ucf -p xc3s100e-cp132-4 Addrr_top.ngc Addrr_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Addrr_top_map.ncd Addrr_top.ngd Addrr_top.pcf 
+par -w -intstyle ise -ol high -t 1 Addrr_top_map.ncd Addrr_top.ncd Addrr_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Addrr_top.twx Addrr_top.ncd -o Addrr_top.twr Addrr_top.pcf -ucf adder_x7seg.ucf 
+bitgen -intstyle ise -f Addrr_top.ut Addrr_top.ncd 
