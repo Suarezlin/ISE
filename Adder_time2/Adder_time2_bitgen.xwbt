@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\ise\Adder_time2\Adder_time2.ncd
+OUTFILE=C:\ise\Adder_time2\Adder_time2.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\ise\Adder_time2
+LICENSE=WebPack
+USER_INFO=__0_0_0

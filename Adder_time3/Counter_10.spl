@@ -1,0 +1,10 @@
+[Inputs]
+clk_1Hz
+clr
+load
+[Outputs]
+=q[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Counter_10
+

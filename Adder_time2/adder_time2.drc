@@ -1,0 +1,8 @@
+Release 13.4 Drc O.87xf (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Tue Apr 18 22:54:56 2017
+
+drc -z Adder_time2.ncd Adder_time2.pcf
+
+DRC detected 0 errors and 0 warnings.

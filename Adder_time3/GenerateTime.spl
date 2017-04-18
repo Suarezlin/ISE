@@ -1,0 +1,10 @@
+[Inputs]
+clk
+clr
+load
+[Outputs]
+clk_1Hz
+[BiDir]
+[ATTRIBUTES]
+VeriModel GenerateTime
+

@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/ise/Adder_time3/Counter_10.v -lang verilog -prj Adder_time3 -o Counter_10.spl -module Counter_10 -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Counter_10.spl C:/ise/Adder_time3/Counter_10.sym 
+vhdtdtfi -lang verilog -prj Adder_time3 -o C:/ise/Adder_time3/Counter_10.tfi -lib work C:/ise/Adder_time3//Counter_10.v -module Counter_10 -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+Counter_10 instance_name (
+    .clk_1Hz(clk_1Hz), 
+    .clr(clr), 
+    .load(load), 
+    .q(q)
+    );
+
+

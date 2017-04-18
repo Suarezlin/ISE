@@ -1,0 +1,11 @@
+net "clk" loc=B8;
+net "clr" loc=A7;
+net "load" loc=M4;
+net "in[3]" loc=N3;
+net "in[2]" loc=E2;
+net "in[1]" loc=F3;
+net "in[0]" loc=G3;
+net "q[3]" loc=G1;
+net "q[2]" loc=P4;
+net "q[1]" loc=N4;
+net "q[0]" loc=N5;

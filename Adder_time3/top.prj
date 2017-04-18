@@ -1,0 +1,4 @@
+verilog work "x7seg.v"
+verilog work "GenerateTime.v"
+verilog work "Counter_10.v"
+verilog work "top.v"
