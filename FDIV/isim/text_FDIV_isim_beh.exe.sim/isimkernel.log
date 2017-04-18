@@ -1,0 +1,28 @@
+Command line:
+   text_FDIV_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50963
+
+Tue Apr 18 21:59:15 2017
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 857.248 Meg
+
+ Total Signals          : 15
+ Total Nets             : 15
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 11
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 123
+
+ Total Simulation Time: 30.75 sec
+
+ Current Memory Usage: 1172.34 Meg
+
+Tue Apr 18 21:59:53 2017
+

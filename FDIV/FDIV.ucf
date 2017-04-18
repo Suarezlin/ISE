@@ -1,0 +1,2 @@
+net "clk_50mHz" loc=B8;
+net "clk_1Hz" loc=G1;

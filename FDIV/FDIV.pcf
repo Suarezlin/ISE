@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map O.87xf on Tue Apr 18 21:53:19 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk_1Hz" LOCATE = SITE "G1" LEVEL 1;
+COMP "clk_50mHz" LOCATE = SITE "B8" LEVEL 1;
+NET "clk_50mHz_BUFGP/IBUFG" BEL "clk_50mHz_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+SCHEMATIC END;
+
