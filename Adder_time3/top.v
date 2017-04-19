@@ -22,6 +22,7 @@ module top(
 		input wire clk,
 		input wire clr,
 		input wire load,
+		input wire type,
 		input wire [3:0] in,
 		output [6:0]a_to_g,
 		output [3:0]an,
@@ -41,6 +42,7 @@ module top(
     .clk_1Hz(clk_1Hz), 
     .clr(clr), 
     .load(load),
+	 .type(type),
 	 .in(in),
     .q(q)
     );

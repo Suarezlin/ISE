@@ -44,15 +44,15 @@ Clock clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-a_to_g<0>   |   11.928(R)|clk_BUFGP         |   0.000|
-a_to_g<1>   |   11.831(R)|clk_BUFGP         |   0.000|
-a_to_g<2>   |   11.924(R)|clk_BUFGP         |   0.000|
-a_to_g<3>   |   11.880(R)|clk_BUFGP         |   0.000|
-a_to_g<4>   |   12.263(R)|clk_BUFGP         |   0.000|
-a_to_g<5>   |   12.077(R)|clk_BUFGP         |   0.000|
-a_to_g<6>   |   12.075(R)|clk_BUFGP         |   0.000|
-an<0>       |    9.458(R)|clk_BUFGP         |   0.000|
-clk_1       |    9.171(R)|clk_BUFGP         |   0.000|
+a_to_g<0>   |   11.563(R)|clk_BUFGP         |   0.000|
+a_to_g<1>   |   11.196(R)|clk_BUFGP         |   0.000|
+a_to_g<2>   |   11.599(R)|clk_BUFGP         |   0.000|
+a_to_g<3>   |   11.717(R)|clk_BUFGP         |   0.000|
+a_to_g<4>   |   11.530(R)|clk_BUFGP         |   0.000|
+a_to_g<5>   |   10.740(R)|clk_BUFGP         |   0.000|
+a_to_g<6>   |   11.217(R)|clk_BUFGP         |   0.000|
+an<0>       |    9.013(R)|clk_BUFGP         |   0.000|
+clk_1       |    9.076(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -60,11 +60,11 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.299|         |         |         |
+clk            |    4.559|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Tue Apr 18 23:29:26 2017 
+Analysis completed Wed Apr 19 14:33:32 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:

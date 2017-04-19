@@ -4,13 +4,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: top.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -139,14 +139,14 @@ Analyzing module <GenerateTime> in library <work>.
 Module <GenerateTime> is correct for synthesis.
  
 Analyzing module <Counter_10> in library <work>.
-WARNING:Xst:1467 - "Counter_10.v" line 31: Reset or set value is not constant in <q[7]>. It could involve simulation mismatches
-WARNING:Xst:1467 - "Counter_10.v" line 31: Reset or set value is not constant in <q[6]>. It could involve simulation mismatches
-WARNING:Xst:1467 - "Counter_10.v" line 31: Reset or set value is not constant in <q[5]>. It could involve simulation mismatches
-WARNING:Xst:1467 - "Counter_10.v" line 31: Reset or set value is not constant in <q[4]>. It could involve simulation mismatches
-WARNING:Xst:1467 - "Counter_10.v" line 31: Reset or set value is not constant in <q[3]>. It could involve simulation mismatches
-WARNING:Xst:1467 - "Counter_10.v" line 31: Reset or set value is not constant in <q[2]>. It could involve simulation mismatches
-WARNING:Xst:1467 - "Counter_10.v" line 31: Reset or set value is not constant in <q[1]>. It could involve simulation mismatches
-WARNING:Xst:1467 - "Counter_10.v" line 31: Reset or set value is not constant in <q[0]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "Counter_10.v" line 32: Reset or set value is not constant in <q[7]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "Counter_10.v" line 32: Reset or set value is not constant in <q[6]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "Counter_10.v" line 32: Reset or set value is not constant in <q[5]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "Counter_10.v" line 32: Reset or set value is not constant in <q[4]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "Counter_10.v" line 32: Reset or set value is not constant in <q[3]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "Counter_10.v" line 32: Reset or set value is not constant in <q[2]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "Counter_10.v" line 32: Reset or set value is not constant in <q[1]>. It could involve simulation mismatches
+WARNING:Xst:1467 - "Counter_10.v" line 32: Reset or set value is not constant in <q[0]>. It could involve simulation mismatches
 Module <Counter_10> is correct for synthesis.
  
 Analyzing module <x7seg> in library <work>.
@@ -176,10 +176,11 @@ Unit <GenerateTime> synthesized.
 Synthesizing Unit <Counter_10>.
     Related source file is "Counter_10.v".
     Found 8-bit register for signal <q>.
-    Found 8-bit adder for signal <$add0000> created at line 37.
+    Found 8-bit adder for signal <$add0000> created at line 47.
+    Found 8-bit subtractor for signal <$sub0000> created at line 40.
     Summary:
 	inferred   4 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
+	inferred   2 Adder/Subtractor(s).
 Unit <Counter_10> synthesized.
 
 
@@ -219,9 +220,10 @@ HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 4
  4-bit adder                                           : 2
  8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
 # Counters                                             : 3
  20-bit up counter                                     : 1
  25-bit up counter                                     : 1
@@ -249,9 +251,10 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # ROMs                                                 : 1
  16x7-bit ROM                                          : 1
-# Adders/Subtractors                                   : 3
+# Adders/Subtractors                                   : 4
  4-bit adder                                           : 2
  8-bit adder                                           : 1
+ 8-bit subtractor                                      : 1
 # Counters                                             : 3
  20-bit up counter                                     : 1
  25-bit up counter                                     : 1
@@ -279,7 +282,7 @@ Optimizing unit <x7seg> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 7.
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 8.
 
 Final Macro Processing ...
 
@@ -314,23 +317,24 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 19
+# IOs                              : 20
 
 Cell Usage :
-# BELS                             : 233
+# BELS                             : 257
 #      GND                         : 1
 #      INV                         : 8
 #      LUT1                        : 47
-#      LUT2                        : 11
-#      LUT2_D                      : 2
-#      LUT2_L                      : 2
-#      LUT3                        : 20
-#      LUT3_L                      : 5
-#      LUT4                        : 31
-#      LUT4_D                      : 3
-#      LUT4_L                      : 1
+#      LUT2                        : 10
+#      LUT2_D                      : 3
+#      LUT2_L                      : 1
+#      LUT3                        : 25
+#      LUT3_D                      : 3
+#      LUT3_L                      : 3
+#      LUT4                        : 45
+#      LUT4_D                      : 2
+#      LUT4_L                      : 6
 #      MUXCY                       : 53
-#      MUXF5                       : 3
+#      MUXF5                       : 4
 #      VCC                         : 1
 #      XORCY                       : 45
 # FlipFlops/Latches                : 86
@@ -339,8 +343,8 @@ Cell Usage :
 #      FDCP                        : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 18
-#      IBUF                        : 6
+# IO Buffers                       : 19
+#      IBUF                        : 7
 #      OBUF                        : 12
 =========================================================================
 
@@ -349,11 +353,11 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                       68  out of    960     7%  
+ Number of Slices:                       79  out of    960     8%  
  Number of Slice Flip Flops:             86  out of   1920     4%  
- Number of 4 input LUTs:                130  out of   1920     6%  
- Number of IOs:                          19
- Number of bonded IOBs:                  19  out of     83    22%  
+ Number of 4 input LUTs:                153  out of   1920     7%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of     83    24%  
  Number of GCLKs:                         1  out of     24     4%  
 
 ---------------------------
@@ -403,8 +407,8 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 5.164ns (Maximum Frequency: 193.648MHz)
-   Minimum input arrival time before clock: 5.895ns
+   Minimum period: 5.338ns (Maximum Frequency: 187.336MHz)
+   Minimum input arrival time before clock: 6.095ns
    Maximum output required time after clock: 7.827ns
    Maximum combinational path delay: No path found
 
@@ -447,49 +451,51 @@ Delay:               5.164ns (Levels of Logic = 12)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'u1/clk_1Hz'
-  Clock period: 4.458ns (frequency: 224.316MHz)
-  Total number of paths / destination ports: 56 / 8
+  Clock period: 5.338ns (frequency: 187.336MHz)
+  Total number of paths / destination ports: 123 / 8
 -------------------------------------------------------------------------
-Delay:               4.458ns (Levels of Logic = 3)
-  Source:            u2/q_5 (FF)
-  Destination:       u2/q_3 (FF)
+Delay:               5.338ns (Levels of Logic = 4)
+  Source:            u2/q_0 (FF)
+  Destination:       u2/q_6 (FF)
   Source Clock:      u1/clk_1Hz rising
   Destination Clock: u1/clk_1Hz rising
 
-  Data Path: u2/q_5 to u2/q_3
+  Data Path: u2/q_0 to u2/q_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             6   0.591   0.844  u2/q_5 (u2/q_5)
-     LUT3_L:I0->LO         1   0.704   0.104  u2/q_3_mux000021_SW0 (N18)
-     LUT4:I3->O            1   0.704   0.499  u2/q_3_mux000021 (u2/q_3_mux000021)
-     LUT4:I1->O            1   0.704   0.000  u2/q_3_mux000088 (u2/q_3_mux0000)
-     FDCP:D                    0.308          u2/q_3
+     FDCP:C->Q            15   0.591   1.096  u2/q_0 (u2/q_0)
+     LUT2_D:I1->O          1   0.704   0.455  u2/q_6_mux00003_SW0 (N16)
+     LUT4:I2->O            1   0.704   0.455  u2/q_7_mux000021 (u2/N29)
+     LUT4:I2->O            1   0.704   0.000  u2/q_6_mux0000_F (N49)
+     MUXF5:I0->O           1   0.321   0.000  u2/q_6_mux0000 (u2/q_6_mux0000)
+     FDCE:D                    0.308          u2/q_6
     ----------------------------------------
-    Total                      4.458ns (3.011ns logic, 1.447ns route)
-                                       (67.5% logic, 32.5% route)
+    Total                      5.338ns (3.332ns logic, 2.006ns route)
+                                       (62.4% logic, 37.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'u1/clk_1Hz'
-  Total number of paths / destination ports: 16 / 8
+  Total number of paths / destination ports: 43 / 12
 -------------------------------------------------------------------------
-Offset:              5.895ns (Levels of Logic = 4)
-  Source:            load (PAD)
-  Destination:       u2/q_3 (FF)
+Offset:              6.095ns (Levels of Logic = 5)
+  Source:            type (PAD)
+  Destination:       u2/q_6 (FF)
   Destination Clock: u1/clk_1Hz rising
 
-  Data Path: load to u2/q_3
+  Data Path: type to u2/q_6
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O            15   1.218   1.192  load_IBUF (load_IBUF)
-     LUT2:I0->O            3   0.704   0.610  u2/q_3__and00001 (u2/q_3__and0000)
-     LUT3:I1->O            1   0.704   0.455  u2/q_3_mux000036_SW0 (N20)
-     LUT4:I2->O            1   0.704   0.000  u2/q_3_mux000088 (u2/q_3_mux0000)
-     FDCP:D                    0.308          u2/q_3
+     IBUF:I->O            17   1.218   1.226  type_IBUF (type_IBUF)
+     LUT2_D:I0->O          1   0.704   0.455  u2/q_6_mux00003_SW0 (N16)
+     LUT4:I2->O            1   0.704   0.455  u2/q_7_mux000021 (u2/N29)
+     LUT4:I2->O            1   0.704   0.000  u2/q_6_mux0000_F (N49)
+     MUXF5:I0->O           1   0.321   0.000  u2/q_6_mux0000 (u2/q_6_mux0000)
+     FDCE:D                    0.308          u2/q_6
     ----------------------------------------
-    Total                      5.895ns (3.638ns logic, 2.257ns route)
-                                       (61.7% logic, 38.3% route)
+    Total                      6.095ns (3.959ns logic, 2.136ns route)
+                                       (65.0% logic, 35.0% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -505,10 +511,10 @@ Offset:              7.827ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              8   0.591   0.932  u3/clkdiv_19 (u3/clkdiv_19)
-     LUT3:I0->O            1   0.704   0.000  u3/Mmux_digit6_F (N27)
+     LUT3:I0->O            1   0.704   0.000  u3/Mmux_digit6_F (N53)
      MUXF5:I0->O           7   0.321   0.883  u3/Mmux_digit6 (u3/digit<1>)
-     LUT4:I0->O            1   0.704   0.420  u3/Mrom_a_to_g61 (a_to_g_6_OBUF)
-     OBUF:I->O                 3.272          a_to_g_6_OBUF (a_to_g<6>)
+     LUT4:I0->O            1   0.704   0.420  u3/Mrom_a_to_g41 (a_to_g_4_OBUF)
+     OBUF:I->O                 3.272          a_to_g_4_OBUF (a_to_g<4>)
     ----------------------------------------
     Total                      7.827ns (5.592ns logic, 2.235ns route)
                                        (71.4% logic, 28.6% route)
@@ -517,11 +523,11 @@ Offset:              7.827ns (Levels of Logic = 4)
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.75 secs
+Total CPU time to Xst completion: 4.08 secs
  
 --> 
 
-Total memory usage is 248500 kilobytes
+Total memory usage is 248628 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    9 (   0 filtered)

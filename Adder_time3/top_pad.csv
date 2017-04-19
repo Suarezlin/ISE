@@ -1,7 +1,7 @@
 #Release 13.4 - par O.87xf (nt)
 #Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-#Tue Apr 18 23:29:24 2017
+#Wed Apr 19 14:33:29 2017
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -147,7 +147,7 @@ P7,,DIFFS,IO_L06N_2/D1/GCLK3,UNUSED,,2,,,,,,,,,
 P8,,DIFFM,IO_L07P_2/M0,UNUSED,,2,,,,,,,,,
 P9,,,VCCAUX,,,,,,,,2.5,,,,
 P10,,,NC,,,,,,,,,,,,
-P11,,IBUF,IP/VREF_2,UNUSED,,2,,,,,,,,,
+P11,type,IBUF,IP/VREF_2,INPUT,LVCMOS25*,2,,,,NONE,,LOCATED,NO,NONE,
 P12,a_to_g<2>,IOB,IO_L11P_2/VS0/A17,OUTPUT,LVCMOS25*,2,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 P13,,,DONE,,,,,,,,,,,,
 P14,,,GND,,,,,,,,,,,,

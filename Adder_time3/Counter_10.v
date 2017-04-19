@@ -22,6 +22,7 @@ module Counter_10(
 		input wire clk_1Hz,
 		input wire clr,
 		input wire load,
+		input wire type,
 		input wire [3:0] in,
 		output reg [7:0] q
     );
@@ -31,9 +32,19 @@ module Counter_10(
 				q <= 0;
 			else if ( load == 1 )
 				q[3:0] <= in;
-			else if ( q == 9 )
-				q <= 0;
+			else if ( type == 1 )
+				begin
+					if ( q == 0 )
+						q <= 9;
+					else
+						q <= q - 1;
+				end
 			else
-				q <= q + 1;
+				begin
+					if ( q == 9 )
+						q <= 0;
+					else
+						q <= q+1;
+				end
 		end
 endmodule

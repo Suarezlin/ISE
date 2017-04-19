@@ -1,6 +1,7 @@
 net "clk" loc=B8;
 net "clr" loc=A7;
 net "load" loc=M4;
+net "type" loc=P11;
 net "in[3]" loc=N3;
 net "in[2]" loc=E2;
 net "in[1]" loc=F3;
