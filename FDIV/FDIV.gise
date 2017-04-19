@@ -42,6 +42,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="FDIV.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="FDIV.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="FDIV.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="FDIV_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="FDIV_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="FDIV_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="FDIV_map.mrp" xil_pn:subbranch="Map"/>
@@ -170,10 +171,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1492523591" xil_pn:in_ck="2822838829" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5979440069105913678" xil_pn:start_ts="1492523585">
+    <transform xil_pn:end_ts="1492583845" xil_pn:in_ck="2822838829" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8689458772936979006" xil_pn:start_ts="1492583840">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FDIV.lso"/>
@@ -192,20 +192,18 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1492523597" xil_pn:in_ck="319911509975123556" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7293013259370962098" xil_pn:start_ts="1492523592">
+    <transform xil_pn:end_ts="1492583852" xil_pn:in_ck="319911509975123556" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7293013259370962098" xil_pn:start_ts="1492583848">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FDIV.bld"/>
       <outfile xil_pn:name="FDIV.ngd"/>
       <outfile xil_pn:name="FDIV_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1492523602" xil_pn:in_ck="319912916383741797" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1492523597">
+    <transform xil_pn:end_ts="1492583855" xil_pn:in_ck="319912916383741797" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1492583852">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="FDIV.pcf"/>
@@ -218,10 +216,9 @@
       <outfile xil_pn:name="FDIV_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1492523612" xil_pn:in_ck="6310746458364749310" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1492523602">
+    <transform xil_pn:end_ts="1492583863" xil_pn:in_ck="6310746458364749310" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1492583855">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FDIV.ncd"/>
       <outfile xil_pn:name="FDIV.pad"/>
       <outfile xil_pn:name="FDIV.par"/>
@@ -233,11 +230,9 @@
       <outfile xil_pn:name="FDIV_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1492523625" xil_pn:in_ck="3074071479436" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1492523617">
+    <transform xil_pn:end_ts="1492583895" xil_pn:in_ck="3074071479436" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1492583885">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FDIV.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="fdiv.bgn"/>
@@ -247,10 +242,9 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1492523612" xil_pn:in_ck="319727270446133985" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1492523610">
+    <transform xil_pn:end_ts="1492583863" xil_pn:in_ck="319727270446133985" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1492583861">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="FDIV.twr"/>
       <outfile xil_pn:name="FDIV.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

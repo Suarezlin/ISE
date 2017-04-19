@@ -25,7 +25,17 @@ module FDIV(
 	 reg[25:0] jsq;
 	 always @ (posedge clk_50mHz)
 		begin
-			if (jsq<25000000)
+			if (jsq<12500000)
+				begin
+					jsq <= jsq + 1;
+					clk_1Hz <= 1;
+				end
+			else if (jsq < 25000000)
+				begin
+					jsq <= jsq + 1;
+					clk_1Hz <= 0;
+				end
+			else if (jsq < 37500000)
 				begin
 					jsq <= jsq + 1;
 					clk_1Hz <= 1;
