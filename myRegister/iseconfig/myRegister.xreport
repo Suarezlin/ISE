@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-18T22:14:51</DateModified>
+  <DateModified>2017-04-19T14:39:14</DateModified>
   <ModuleName>myRegister</ModuleName>
   <SummaryTimeStamp>2017-04-18T22:11:55</SummaryTimeStamp>
   <SavedFilePath>C:/ise/myRegister/iseconfig/myRegister.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/ise/myRegister</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/ise/myRegister\</ImplementationReportsDirectory>
   <DateInitialized>2017-04-18T22:02:41</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
