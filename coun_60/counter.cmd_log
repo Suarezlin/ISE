@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/ise/coun_60/counter.v -lang verilog -prj coun_60 -o counter.spl -module counter -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e counter.spl C:/ise/coun_60/counter.sym 
+vhdtdtfi -lang verilog -prj coun_60 -o C:/ise/coun_60/counter.tfi -lib work C:/ise/coun_60//counter.v -module counter -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

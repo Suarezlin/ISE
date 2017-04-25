@@ -25,19 +25,16 @@ module top(
 		input wire type,
 		input wire [3:0] in,
 		output [6:0]a_to_g,
-		output [3:0]an,
-		output reg clk_1
+		output [3:0]an
     );
-	 wire [7:0] q;
 	 wire clk_1Hz;
+	 wire [7:0]q;
 	 GenerateTime u1 (
     .clk(clk), 
     .clr(clr), 
     .load(load), 
     .clk_1Hz(clk_1Hz)
     );
-	 always @ (*)
-		clk_1 <= clk_1Hz;
 	 Counter_10 u2 (
     .clk_1Hz(clk_1Hz), 
     .clr(clr), 

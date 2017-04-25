@@ -17,4 +17,3 @@ net "an[3]" loc="K14";
 net "an[2]" loc="M13";
 net "an[1]" loc="J12";
 net "an[0]" loc="F12";
-net "clk_1" loc=M5;

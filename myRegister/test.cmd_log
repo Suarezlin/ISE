@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/ise/myRegister/test.v -lang verilog -prj myRegister -o test.spl -module test -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e test.spl C:/ise/myRegister/test.sym 
+vhdtdtfi -lang verilog -prj myRegister -o C:/ise/myRegister/test.tfi -lib work C:/ise/myRegister//test.v -module test -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

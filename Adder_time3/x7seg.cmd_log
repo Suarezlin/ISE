@@ -1,3 +1,6 @@
 vhdtdtfi -lib work C:/ise/Adder_time3/x7seg.v -lang verilog -prj Adder_time3 -o x7seg.spl -module x7seg -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan3e x7seg.spl C:/ise/Adder_time3/x7seg.sym 
 vhdtdtfi -lang verilog -prj Adder_time3 -o C:/ise/Adder_time3/x7seg.tfi -lib work C:/ise/Adder_time3//x7seg.v -module x7seg -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work C:/ise/Adder_time3/x7seg.v -lang verilog -prj Adder_time3 -o x7seg.spl -module x7seg -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e x7seg.spl C:/ise/Adder_time3/x7seg.sym 
+vhdtdtfi -lang verilog -prj Adder_time3 -o C:/ise/Adder_time3/x7seg.tfi -lib work C:/ise/Adder_time3//x7seg.v -module x7seg -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

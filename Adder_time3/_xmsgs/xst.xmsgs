@@ -8,28 +8,28 @@
 <msg type="warning" file="HDLCompilers" num="299" delta="old" ><arg fmt="%s" index="1">&quot;x7seg.v&quot; line 118 </arg>Too many digits specified in binary constant
 </msg>
 
-<msg type="warning" file="Xst" num="1467" delta="new" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[7]</arg>&gt;. It could involve simulation mismatches
+<msg type="warning" file="Xst" num="1467" delta="old" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[7]</arg>&gt;. It could involve simulation mismatches
 </msg>
 
-<msg type="warning" file="Xst" num="1467" delta="new" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[6]</arg>&gt;. It could involve simulation mismatches
+<msg type="warning" file="Xst" num="1467" delta="old" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[6]</arg>&gt;. It could involve simulation mismatches
 </msg>
 
-<msg type="warning" file="Xst" num="1467" delta="new" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[5]</arg>&gt;. It could involve simulation mismatches
+<msg type="warning" file="Xst" num="1467" delta="old" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[5]</arg>&gt;. It could involve simulation mismatches
 </msg>
 
-<msg type="warning" file="Xst" num="1467" delta="new" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[4]</arg>&gt;. It could involve simulation mismatches
+<msg type="warning" file="Xst" num="1467" delta="old" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[4]</arg>&gt;. It could involve simulation mismatches
 </msg>
 
-<msg type="warning" file="Xst" num="1467" delta="new" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[3]</arg>&gt;. It could involve simulation mismatches
+<msg type="warning" file="Xst" num="1467" delta="old" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[3]</arg>&gt;. It could involve simulation mismatches
 </msg>
 
-<msg type="warning" file="Xst" num="1467" delta="new" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[2]</arg>&gt;. It could involve simulation mismatches
+<msg type="warning" file="Xst" num="1467" delta="old" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[2]</arg>&gt;. It could involve simulation mismatches
 </msg>
 
-<msg type="warning" file="Xst" num="1467" delta="new" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[1]</arg>&gt;. It could involve simulation mismatches
+<msg type="warning" file="Xst" num="1467" delta="old" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[1]</arg>&gt;. It could involve simulation mismatches
 </msg>
 
-<msg type="warning" file="Xst" num="1467" delta="new" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[0]</arg>&gt;. It could involve simulation mismatches
+<msg type="warning" file="Xst" num="1467" delta="old" >&quot;<arg fmt="%s" index="1">Counter_10.v</arg>&quot; line <arg fmt="%d" index="2">32</arg>: Reset or set value is not constant in &lt;<arg fmt="%s" index="3">q[0]</arg>&gt;. It could involve simulation mismatches
 </msg>
 
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">hun&lt;3&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">x7seg</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
@@ -38,7 +38,7 @@
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">hun&lt;2&gt;</arg>&gt; in unit &lt;<arg fmt="%s" index="2">x7seg</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 </msg>
 
 </messages>

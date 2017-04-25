@@ -1,7 +1,7 @@
 #Release 13.4 - par O.87xf (nt)
 #Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-#Wed Apr 19 14:33:29 2017
+#Thu Apr 20 08:11:32 2017
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -113,7 +113,7 @@ M1,,DIFFS,IO_L09N_3,UNUSED,,3,,,,,,,,,
 M2,,DIFFM,IO_L01P_2/CSO_B,UNUSED,,2,,,,,,,,,
 M3,,,GND,,,,,,,,,,,,
 M4,load,IBUF,IO_L03P_2/D7/GCLK12,INPUT,LVCMOS25*,2,,,,NONE,,LOCATED,NO,NONE,
-M5,clk_1,IOB,IO_L04P_2/D4/GCLK14,OUTPUT,LVCMOS25*,2,12,SLOW,NONE**,,,LOCATED,NO,NONE,
+M5,,DIFFM,IO_L04P_2/D4/GCLK14,UNUSED,,2,,,,,,,,,
 M6,,DIFFMI,IP_L05P_2/RDWR_B/GCLK0,UNUSED,,2,,,,,,,,,
 M7,,,GND,,,,,,,,,,,,
 M8,,,VCCO_2,,,2,,,,,2.50,,,,

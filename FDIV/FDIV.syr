@@ -132,30 +132,25 @@ Performing bidirectional port resolution...
 Synthesizing Unit <FDIV>.
     Related source file is "FDIV.v".
     Found 1-bit register for signal <clk_1Hz>.
-    Found 26-bit comparator less for signal <clk_1Hz$cmp_lt0000> created at line 28.
-    Found 26-bit comparator less for signal <clk_1Hz$cmp_lt0001> created at line 33.
-    Found 26-bit comparator less for signal <clk_1Hz$cmp_lt0002> created at line 38.
-    Found 26-bit register for signal <jsq>.
-    Found 26-bit adder for signal <jsq$mux0000>.
+    Found 27-bit comparator less for signal <clk_1Hz$cmp_lt0000> created at line 28.
+    Found 27-bit up counter for signal <jsq>.
     Summary:
-	inferred  27 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-	inferred   3 Comparator(s).
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
 Unit <FDIV> synthesized.
 
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 26-bit adder                                          : 1
-# Registers                                            : 2
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 1
  1-bit register                                        : 1
- 26-bit register                                       : 1
-# Comparators                                          : 3
- 26-bit comparator less                                : 3
+# Comparators                                          : 1
+ 27-bit comparator less                                : 1
 
 =========================================================================
 
@@ -168,12 +163,12 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 26-bit adder                                          : 1
-# Registers                                            : 27
- Flip-Flops                                            : 27
-# Comparators                                          : 3
- 26-bit comparator less                                : 3
+# Counters                                             : 1
+ 27-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Comparators                                          : 1
+ 27-bit comparator less                                : 1
 
 =========================================================================
 
@@ -185,7 +180,7 @@ Optimizing unit <FDIV> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block FDIV, actual ratio is 3.
+Found area constraint ratio of 100 (+ 5) on block FDIV, actual ratio is 2.
 
 Final Macro Processing ...
 
@@ -193,8 +188,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 27
- Flip-Flops                                            : 27
+# Registers                                            : 28
+ Flip-Flops                                            : 28
 
 =========================================================================
 
@@ -223,19 +218,19 @@ Design Statistics
 # IOs                              : 2
 
 Cell Usage :
-# BELS                             : 157
+# BELS                             : 100
 #      GND                         : 1
-#      INV                         : 10
-#      LUT1                        : 35
-#      LUT2                        : 5
+#      INV                         : 2
+#      LUT1                        : 28
+#      LUT2                        : 2
 #      LUT3                        : 2
-#      LUT4                        : 14
-#      MUXCY                       : 63
+#      LUT4                        : 2
+#      MUXCY                       : 35
 #      VCC                         : 1
-#      XORCY                       : 26
-# FlipFlops/Latches                : 27
-#      FDR                         : 26
-#      FDS                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 28
+#      FD                          : 27
+#      FDR                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 1
@@ -247,9 +242,9 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                       35  out of    960     3%  
- Number of Slice Flip Flops:             27  out of   1920     1%  
- Number of 4 input LUTs:                 66  out of   1920     3%  
+ Number of Slices:                       21  out of    960     2%  
+ Number of Slice Flip Flops:             28  out of   1920     1%  
+ Number of 4 input LUTs:                 36  out of   1920     1%  
  Number of IOs:                           2
  Number of bonded IOBs:                   2  out of     83     2%  
  Number of GCLKs:                         1  out of     24     4%  
@@ -275,7 +270,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk_50mHz                          | BUFGP                  | 27    |
+clk_50mHz                          | BUFGP                  | 28    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -286,7 +281,7 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 5.966ns (Maximum Frequency: 167.616MHz)
+   Minimum period: 4.882ns (Maximum Frequency: 204.834MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 4.283ns
    Maximum combinational path delay: No path found
@@ -297,37 +292,51 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_50mHz'
-  Clock period: 5.966ns (frequency: 167.616MHz)
-  Total number of paths / destination ports: 1089 / 54
+  Clock period: 4.882ns (frequency: 204.834MHz)
+  Total number of paths / destination ports: 399 / 28
 -------------------------------------------------------------------------
-Delay:               5.966ns (Levels of Logic = 13)
-  Source:            jsq_5 (FF)
-  Destination:       clk_1Hz (FF)
+Delay:               4.882ns (Levels of Logic = 27)
+  Source:            jsq_1 (FF)
+  Destination:       jsq_26 (FF)
   Source Clock:      clk_50mHz rising
   Destination Clock: clk_50mHz rising
 
-  Data Path: jsq_5 to clk_1Hz
+  Data Path: jsq_1 to jsq_26
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              4   0.591   0.762  jsq_5 (jsq_5)
-     LUT1:I0->O            1   0.704   0.000  Mcompar_clk_1Hz_cmp_lt0000_cy<0>_rt (Mcompar_clk_1Hz_cmp_lt0000_cy<0>_rt)
-     MUXCY:S->O            1   0.464   0.000  Mcompar_clk_1Hz_cmp_lt0000_cy<0> (Mcompar_clk_1Hz_cmp_lt0000_cy<0>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_1Hz_cmp_lt0000_cy<1> (Mcompar_clk_1Hz_cmp_lt0000_cy<1>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_1Hz_cmp_lt0000_cy<2> (Mcompar_clk_1Hz_cmp_lt0000_cy<2>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_1Hz_cmp_lt0000_cy<3> (Mcompar_clk_1Hz_cmp_lt0000_cy<3>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_1Hz_cmp_lt0000_cy<4> (Mcompar_clk_1Hz_cmp_lt0000_cy<4>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_1Hz_cmp_lt0000_cy<5> (Mcompar_clk_1Hz_cmp_lt0000_cy<5>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_1Hz_cmp_lt0000_cy<6> (Mcompar_clk_1Hz_cmp_lt0000_cy<6>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_1Hz_cmp_lt0000_cy<7> (Mcompar_clk_1Hz_cmp_lt0000_cy<7>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_1Hz_cmp_lt0000_cy<8> (Mcompar_clk_1Hz_cmp_lt0000_cy<8>)
-     MUXCY:CI->O           1   0.059   0.000  Mcompar_clk_1Hz_cmp_lt0000_cy<9> (Mcompar_clk_1Hz_cmp_lt0000_cy<9>)
-     MUXCY:CI->O           1   0.459   0.420  Mcompar_clk_1Hz_cmp_lt0000_cy<10> (Mcompar_clk_1Hz_cmp_lt0000_cy<10>)
-     INV:I->O              1   0.704   0.420  Mcompar_clk_1Hz_cmp_lt0000_cy<10>_inv_INV_0 (clk_1Hz_cmp_lt0000)
-     FDS:S                     0.911          clk_1Hz
+     FD:C->Q               1   0.591   0.595  jsq_1 (jsq_1)
+     LUT1:I0->O            1   0.704   0.000  Mcount_jsq_cy<1>_rt (Mcount_jsq_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcount_jsq_cy<1> (Mcount_jsq_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<2> (Mcount_jsq_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<3> (Mcount_jsq_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<4> (Mcount_jsq_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<5> (Mcount_jsq_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<6> (Mcount_jsq_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<7> (Mcount_jsq_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<8> (Mcount_jsq_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<9> (Mcount_jsq_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<10> (Mcount_jsq_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<11> (Mcount_jsq_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<12> (Mcount_jsq_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<13> (Mcount_jsq_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<14> (Mcount_jsq_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<15> (Mcount_jsq_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<16> (Mcount_jsq_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<17> (Mcount_jsq_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<18> (Mcount_jsq_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<19> (Mcount_jsq_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<20> (Mcount_jsq_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<21> (Mcount_jsq_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<22> (Mcount_jsq_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<23> (Mcount_jsq_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_jsq_cy<24> (Mcount_jsq_cy<24>)
+     MUXCY:CI->O           0   0.059   0.000  Mcount_jsq_cy<25> (Mcount_jsq_cy<25>)
+     XORCY:CI->O           1   0.804   0.000  Mcount_jsq_xor<26> (Result<26>)
+     FD:D                      0.308          jsq_26
     ----------------------------------------
-    Total                      5.966ns (4.364ns logic, 1.602ns route)
-                                       (73.1% logic, 26.9% route)
+    Total                      4.882ns (4.287ns logic, 0.595ns route)
+                                       (87.8% logic, 12.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_50mHz'
@@ -342,7 +351,7 @@ Offset:              4.283ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q              1   0.591   0.420  clk_1Hz (clk_1Hz_OBUF)
+     FDR:C->Q              1   0.591   0.420  clk_1Hz (clk_1Hz_OBUF)
      OBUF:I->O                 3.272          clk_1Hz_OBUF (clk_1Hz)
     ----------------------------------------
     Total                      4.283ns (3.863ns logic, 0.420ns route)
@@ -352,13 +361,13 @@ Offset:              4.283ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.09 secs
+Total CPU time to Xst completion: 3.07 secs
  
 --> 
 
-Total memory usage is 247156 kilobytes
+Total memory usage is 246452 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 

@@ -44,7 +44,7 @@ Clock clk_50mHz to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-clk_1Hz     |    8.323(R)|clk_50mHz_BUFGP   |   0.000|
+clk_1Hz     |    8.472(R)|clk_50mHz_BUFGP   |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk_50mHz
@@ -52,11 +52,11 @@ Clock to Setup on destination clock clk_50mHz
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk_50mHz      |    5.290|         |         |         |
+clk_50mHz      |    4.689|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Wed Apr 19 14:37:42 2017 
+Analysis completed Wed Apr 19 21:24:48 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:

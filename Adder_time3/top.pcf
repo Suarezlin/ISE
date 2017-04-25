@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map O.87xf on Wed Apr 19 14:33:22 2017
+// Written by: Map O.87xf on Thu Apr 20 08:11:25 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -21,7 +21,6 @@ COMP "in<0>" LOCATE = SITE "G3" LEVEL 1;
 COMP "in<1>" LOCATE = SITE "F3" LEVEL 1;
 COMP "in<2>" LOCATE = SITE "E2" LEVEL 1;
 COMP "in<3>" LOCATE = SITE "N3" LEVEL 1;
-COMP "clk_1" LOCATE = SITE "M5" LEVEL 1;
 COMP "load" LOCATE = SITE "M4" LEVEL 1;
 NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
 SCHEMATIC END;

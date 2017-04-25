@@ -104,7 +104,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+Compiling verilog file "GenerateTime.v" in library work
 Compiling verilog file "myRegister.v" in library work
+Module <GenerateTime> compiled
 Module <myRegister> compiled
 No errors in compilation
 Analysis of file <"myRegister.prj"> succeeded.
@@ -115,12 +117,17 @@ Analysis of file <"myRegister.prj"> succeeded.
 =========================================================================
 Analyzing hierarchy for module <myRegister> in library <work>.
 
+Analyzing hierarchy for module <GenerateTime> in library <work>.
+
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <myRegister>.
 Module <myRegister> is correct for synthesis.
+ 
+Analyzing module <GenerateTime> in library <work>.
+Module <GenerateTime> is correct for synthesis.
  
 
 =========================================================================
@@ -129,31 +136,34 @@ Module <myRegister> is correct for synthesis.
 
 Performing bidirectional port resolution...
 
+Synthesizing Unit <GenerateTime>.
+    Related source file is "GenerateTime.v".
+    Found 1-bit register for signal <clk_1>.
+    Found 26-bit comparator less for signal <clk_1$cmp_lt0000> created at line 28.
+    Found 26-bit up counter for signal <jsq>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <GenerateTime> synthesized.
+
+
 Synthesizing Unit <myRegister>.
     Related source file is "myRegister.v".
-    Found 1-bit register for signal <clk_1Hz>.
     Found 4-bit register for signal <q>.
-    Found 1-bit register for signal <clk_1>.
-    Found 26-bit register for signal <jsq>.
-    Found 26-bit comparator less for signal <jsq$cmp_lt0000> created at line 33.
-    Found 26-bit adder for signal <jsq$share0000>.
     Summary:
-	inferred  32 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-	inferred   1 Comparator(s).
+	inferred   4 D-type flip-flop(s).
 Unit <myRegister> synthesized.
 
-INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 26-bit adder                                          : 1
-# Registers                                            : 4
- 1-bit register                                        : 2
- 26-bit register                                       : 1
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
  4-bit register                                        : 1
 # Comparators                                          : 1
  26-bit comparator less                                : 1
@@ -169,10 +179,10 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 26-bit adder                                          : 1
-# Registers                                            : 32
- Flip-Flops                                            : 32
+# Counters                                             : 1
+ 26-bit up counter                                     : 1
+# Registers                                            : 5
+ Flip-Flops                                            : 5
 # Comparators                                          : 1
  26-bit comparator less                                : 1
 
@@ -186,7 +196,7 @@ Optimizing unit <myRegister> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block myRegister, actual ratio is 4.
+Found area constraint ratio of 100 (+ 5) on block myRegister, actual ratio is 2.
 
 Final Macro Processing ...
 
@@ -194,8 +204,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 32
- Flip-Flops                                            : 32
+# Registers                                            : 31
+ Flip-Flops                                            : 31
 
 =========================================================================
 
@@ -224,22 +234,18 @@ Design Statistics
 # IOs                              : 12
 
 Cell Usage :
-# BELS                             : 146
+# BELS                             : 99
 #      GND                         : 1
 #      INV                         : 4
 #      LUT1                        : 29
-#      LUT2                        : 29
-#      LUT3                        : 2
-#      LUT4                        : 12
-#      LUT4_D                      : 3
-#      LUT4_L                      : 3
-#      MUXCY                       : 36
+#      LUT4                        : 3
+#      MUXCY                       : 35
 #      VCC                         : 1
 #      XORCY                       : 26
-# FlipFlops/Latches                : 32
-#      FD                          : 16
+# FlipFlops/Latches                : 31
+#      FD                          : 26
 #      FDCE                        : 4
-#      FDS                         : 12
+#      FDR                         : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 11
@@ -252,9 +258,9 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                       44  out of    960     4%  
- Number of Slice Flip Flops:             28  out of   1920     1%  
- Number of 4 input LUTs:                 82  out of   1920     4%  
+ Number of Slices:                       20  out of    960     2%  
+ Number of Slice Flip Flops:             27  out of   1920     1%  
+ Number of 4 input LUTs:                 36  out of   1920     1%  
  Number of IOs:                          12
  Number of bonded IOBs:                  12  out of     83    14%  
     IOB Flip Flops:                       4
@@ -281,8 +287,8 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 28    |
-clk_1                              | NONE(q_0)              | 4     |
+U0/clk_1                           | NONE(q_0)              | 4     |
+clk                                | BUFGP                  | 27    |
 -----------------------------------+------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -298,9 +304,9 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 7.641ns (Maximum Frequency: 130.873MHz)
+   Minimum period: 4.823ns (Maximum Frequency: 207.340MHz)
    Minimum input arrival time before clock: 2.360ns
-   Maximum output required time after clock: 4.283ns
+   Maximum output required time after clock: 4.496ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -309,38 +315,59 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 7.641ns (frequency: 130.873MHz)
-  Total number of paths / destination ports: 2372 / 39
+  Clock period: 4.823ns (frequency: 207.340MHz)
+  Total number of paths / destination ports: 370 / 27
 -------------------------------------------------------------------------
-Delay:               7.641ns (Levels of Logic = 5)
-  Source:            jsq_6 (FF)
-  Destination:       jsq_1 (FF)
+Delay:               4.823ns (Levels of Logic = 26)
+  Source:            U0/jsq_1 (FF)
+  Destination:       U0/jsq_25 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: jsq_6 to jsq_1
+  Data Path: U0/jsq_1 to U0/jsq_25
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q              5   0.591   0.808  jsq_6 (jsq_6)
-     LUT4:I0->O            1   0.704   0.499  jsq_mux0000<0>164 (jsq_mux0000<0>164)
-     LUT2:I1->O            1   0.704   0.424  jsq_mux0000<0>165 (jsq_mux0000<0>165)
-     LUT4:I3->O            2   0.704   0.451  jsq_mux0000<0>190 (jsq_mux0000<0>190)
-     LUT4_D:I3->O         12   0.704   1.040  jsq_mux0000<0>1115 (N01)
-     LUT2:I1->O            1   0.704   0.000  jsq_mux0000<22>1 (jsq_mux0000<22>)
-     FD:D                      0.308          jsq_22
+     FD:C->Q               1   0.591   0.595  U0/jsq_1 (U0/jsq_1)
+     LUT1:I0->O            1   0.704   0.000  U0/Mcount_jsq_cy<1>_rt (U0/Mcount_jsq_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  U0/Mcount_jsq_cy<1> (U0/Mcount_jsq_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<2> (U0/Mcount_jsq_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<3> (U0/Mcount_jsq_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<4> (U0/Mcount_jsq_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<5> (U0/Mcount_jsq_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<6> (U0/Mcount_jsq_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<7> (U0/Mcount_jsq_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<8> (U0/Mcount_jsq_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<9> (U0/Mcount_jsq_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<10> (U0/Mcount_jsq_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<11> (U0/Mcount_jsq_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<12> (U0/Mcount_jsq_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<13> (U0/Mcount_jsq_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<14> (U0/Mcount_jsq_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<15> (U0/Mcount_jsq_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<16> (U0/Mcount_jsq_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<17> (U0/Mcount_jsq_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<18> (U0/Mcount_jsq_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<19> (U0/Mcount_jsq_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<20> (U0/Mcount_jsq_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<21> (U0/Mcount_jsq_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<22> (U0/Mcount_jsq_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  U0/Mcount_jsq_cy<23> (U0/Mcount_jsq_cy<23>)
+     MUXCY:CI->O           0   0.059   0.000  U0/Mcount_jsq_cy<24> (U0/Mcount_jsq_cy<24>)
+     XORCY:CI->O           1   0.804   0.000  U0/Mcount_jsq_xor<25> (Result<25>)
+     FD:D                      0.308          U0/jsq_25
     ----------------------------------------
-    Total                      7.641ns (4.419ns logic, 3.222ns route)
-                                       (57.8% logic, 42.2% route)
+    Total                      4.823ns (4.228ns logic, 0.595ns route)
+                                       (87.7% logic, 12.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_1'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U0/clk_1'
   Total number of paths / destination ports: 8 / 8
 -------------------------------------------------------------------------
 Offset:              2.360ns (Levels of Logic = 1)
   Source:            load (PAD)
   Destination:       q_0 (FF)
-  Destination Clock: clk_1 rising
+  Destination Clock: U0/clk_1 rising
 
   Data Path: load to q_0
                                 Gate     Net
@@ -356,29 +383,29 @@ Offset:              2.360ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.283ns (Levels of Logic = 1)
-  Source:            clk_1Hz (FF)
+Offset:              4.496ns (Levels of Logic = 1)
+  Source:            U0/clk_1 (FF)
   Destination:       clk_1Hz (PAD)
   Source Clock:      clk rising
 
-  Data Path: clk_1Hz to clk_1Hz
+  Data Path: U0/clk_1 to clk_1Hz
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               1   0.591   0.420  clk_1Hz (clk_1Hz_OBUF)
+     FDR:C->Q              5   0.591   0.633  U0/clk_1 (U0/clk_1)
      OBUF:I->O                 3.272          clk_1Hz_OBUF (clk_1Hz)
     ----------------------------------------
-    Total                      4.283ns (3.863ns logic, 0.420ns route)
-                                       (90.2% logic, 9.8% route)
+    Total                      4.496ns (3.863ns logic, 0.633ns route)
+                                       (85.9% logic, 14.1% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_1'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'U0/clk_1'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
 Offset:              4.283ns (Levels of Logic = 1)
   Source:            q_3 (FF)
   Destination:       q<3> (PAD)
-  Source Clock:      clk_1 rising
+  Source Clock:      U0/clk_1 rising
 
   Data Path: q_3 to q<3>
                                 Gate     Net
@@ -393,14 +420,14 @@ Offset:              4.283ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.97 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.26 secs
  
 --> 
 
-Total memory usage is 246900 kilobytes
+Total memory usage is 246964 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

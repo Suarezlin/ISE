@@ -1,0 +1,8 @@
+[Inputs]
+clk_50mHz
+[Outputs]
+clk_1Hz
+[BiDir]
+[ATTRIBUTES]
+VeriModel GenerateTime
+

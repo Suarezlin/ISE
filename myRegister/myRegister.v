@@ -24,35 +24,13 @@ module myRegister(
 		input wire clr,
 		input wire [3:0] d,
 		output reg [3:0] q,
-		output reg clk_1Hz
+		output clk_1Hz
     );
-	 reg[25:0] jsq;
-	 reg clk_1;
-	 always @ (posedge clk)
-		begin
-			if (jsq<12500000)
-				begin
-					jsq <= jsq + 1;
-					clk_1 <= 1;
-				end
-			else if (jsq == 37500000)
-				begin
-					jsq <= jsq + 1;
-					clk_1 <= 1;
-				end
-			else if (jsq == 50000000)
-				begin
-					jsq <= 0;
-					clk_1 <= 0;
-				end
-			else
-				begin
-					jsq <= jsq + 1;
-					clk_1 <= 0;
-				end
-			clk_1Hz <= clk_1;
-		end
-	 always @ ( posedge clk_1 or posedge clr )
+	 GenerateTime U0 (
+    .clk(clk), 
+    .clk_1(clk_1Hz)
+    );
+	 always @ ( posedge clk_1Hz or posedge clr )
 		if (clr ==1 )
 			q <= 0;
 		else if ( load == 1 )

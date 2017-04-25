@@ -1,0 +1,5 @@
+verilog work "SecondPulse.v"
+verilog work "disp.v"
+verilog work "cnt60.v"
+verilog work "cnt24.v"
+verilog work "Clock_Top.v"

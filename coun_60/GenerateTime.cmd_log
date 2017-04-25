@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/ise/coun_60/GenerateTime.v -lang verilog -prj coun_60 -o GenerateTime.spl -module GenerateTime -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e GenerateTime.spl C:/ise/coun_60/GenerateTime.sym 
+vhdtdtfi -lang verilog -prj coun_60 -o C:/ise/coun_60/GenerateTime.tfi -lib work C:/ise/coun_60//GenerateTime.v -module GenerateTime -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 
