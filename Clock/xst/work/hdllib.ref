@@ -1,5 +1,8 @@
-MO cnt24 NULL cnt24.v vlg6B/cnt24.bin 1492652537
-MO cnt60 NULL cnt60.v vlg7B/cnt60.bin 1492652537
-MO SecondPulse NULL SecondPulse.v vlg4D/_second_pulse.bin 1492652537
-MO disp NULL disp.v vlg44/disp.bin 1492652537
-MO Clock_Top NULL Clock_Top.v vlg32/_clock___top.bin 1492652537
+MO cnt24 NULL cnt24.v vlg6B/cnt24.bin 1493191063
+MO cnt60_son NULL cnt60_son.v vlg02/cnt60__son.bin 1493188764
+MO cnt60 NULL cnt60.v vlg7B/cnt60.bin 1493191063
+MO SecondPulse NULL SecondPulse.v vlg4D/_second_pulse.bin 1493191063
+MO disp NULL disp.v vlg44/disp.bin 1493191063
+MO Clock_Top NULL Clock_Top.v vlg32/_clock___top.bin 1493191063
+MO set_time NULL set_time.v vlg22/set__time.bin 1493188764
+MO cnt60_second NULL cnt60_second.v vlg12/cnt60__second.bin 1493191063

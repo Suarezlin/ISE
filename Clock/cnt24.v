@@ -19,8 +19,11 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module cnt24(
+		input wire clk_1,
 		input wire clk,
 		input wire clr,
+		input wire set_L,
+		input wire set_H,
 		output reg [3:0] cnt24_L,
 		output reg [3:0] cnt24_H,
 		output reg carry
@@ -29,14 +32,28 @@ module cnt24(
 		cnt24_L = 3;
 		cnt24_H = 2;
 	 end
-	 always @ ( posedge clk or posedge clr )
+	 always @ ( posedge clk_1 or posedge clr )
 		begin
 			if ( clr == 1 )
 				begin
 					cnt24_L <= 0;
 					cnt24_H <= 0;
 				end
-			else
+			else if ( set_L == 1 )
+				begin
+					cnt24_L <= cnt24_L + 1;
+					if ( cnt24_H==2 && cnt24_L == 3 )
+						cnt24_L <= 0;
+					else if ( cnt24_L == 9 )
+						cnt24_L <= 0;
+				end
+			else if ( set_H == 1 )
+				begin
+					cnt24_H <= cnt24_H + 1;
+					if ( cnt24_H == 2 )
+						cnt24_H <= 0;
+				end 
+			else if ( clk == 1 )
 				begin
 					carry <= 0;
 					cnt24_L <= cnt24_L + 1;

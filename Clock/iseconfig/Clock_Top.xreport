@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-20T08:41:52</DateModified>
+  <DateModified>2017-04-26T13:33:11</DateModified>
   <ModuleName>Clock_Top</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2017-04-26T13:27:15</SummaryTimeStamp>
   <SavedFilePath>C:/ise/Clock/iseconfig/Clock_Top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/ise/Clock\</ImplementationReportsDirectory>
   <DateInitialized>2017-04-19T22:18:43</DateInitialized>

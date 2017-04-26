@@ -1,0 +1,6 @@
+vhdtdtfi -lib work C:/ise/Clock/set_time.v -lang verilog -prj Clock -o set_time.spl -module set_time -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e set_time.spl C:/ise/Clock/set_time.sym 
+vhdtdtfi -lang verilog -prj Clock -o C:/ise/Clock/set_time.tfi -lib work C:/ise/Clock//set_time.v -module set_time -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work C:/ise/Clock/set_time.v -lang verilog -prj Clock -o set_time.spl -module set_time -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e set_time.spl C:/ise/Clock/set_time.sym 
+vhdtdtfi -lang verilog -prj Clock -o C:/ise/Clock/set_time.tfi -lib work C:/ise/Clock//set_time.v -module set_time -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

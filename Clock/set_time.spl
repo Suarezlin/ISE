@@ -1,0 +1,12 @@
+[Inputs]
+Minute_L
+Minute_H
+set_L
+set_H
+[Outputs]
+=cnt60_L[3:0]=
+=cnt60_H[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel set_time
+

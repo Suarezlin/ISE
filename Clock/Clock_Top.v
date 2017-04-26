@@ -21,10 +21,10 @@
 module Clock_Top(
 		input wire clk,
 		input wire clr,
-		input wire minute_add,
-		input wire minute_minus,
-		input wire hour_add,
-		input wire hour_minus,
+		input wire set_minute_L,
+		input wire set_minute_H,
+		input wire set_hour_L,
+		input wire set_hour_H,
 		output Second_Flash,
 		output [6:0] a_to_g,
 		output [3:0] an
@@ -42,27 +42,29 @@ module Clock_Top(
 		.clr(clr),
 		.sec(Second_Flash)
 	 );
-	 cnt60 U1 (
+	 cnt60_second U1 (
 		.clk(Second_Flash),
 		.clr(clr),
-		.minute_add(minute_addaaa),
-		.minute_minus(minute_minusaaas),
 		.cnt60_L(Second_L),
 		.cnt60_H(Second_H),
 		.carry(carry_1)
 	 );
 	 cnt60 U2 (
+		.clk_1(Second_Flash),
 		.clk(carry_1),
 		.clr(clr),
-		.minute_add(minute_add),
-		.minute_minus(minute_minus),
+		.set_L(set_minute_L),
+		.set_H(set_minute_H),
 		.cnt60_L(Minute_L),
 		.cnt60_H(Minute_H),
 		.carry(carry)
 	 );
 	 cnt24 U3 (
+		.clk_1(Second_Flash),
 		.clk(carry),
 		.clr(clr),
+		.set_L(set_hour_L),
+		.set_H(set_hour_H),
 		.cnt24_L(Hour_L),
 		.cnt24_H(Hour_H),
 		.carry(carryaa)

@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+cnt60_son instance_name (
+    .clk(clk), 
+    .clr(clr), 
+    .cnt60_L(cnt60_L), 
+    .cnt60_H(cnt60_H), 
+    .carry(carry)
+    );
+
+

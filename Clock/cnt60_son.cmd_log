@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/ise/Clock/cnt60_son.v -lang verilog -prj Clock -o cnt60_son.spl -module cnt60_son -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e cnt60_son.spl C:/ise/Clock/cnt60_son.sym 
+vhdtdtfi -lang verilog -prj Clock -o C:/ise/Clock/cnt60_son.tfi -lib work C:/ise/Clock//cnt60_son.v -module cnt60_son -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

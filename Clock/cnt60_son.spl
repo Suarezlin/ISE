@@ -1,0 +1,11 @@
+[Inputs]
+clk
+clr
+[Outputs]
+carry
+=cnt60_L[3:0]=
+=cnt60_H[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel cnt60_son
+
