@@ -1,0 +1,218 @@
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 
+xst -intstyle ise -ifn "C:/ise/chaoshengbo/chao_top.xst" -ofn "C:/ise/chaoshengbo/chao_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc chaoshengbo.ucf -p xc3s100e-cp132-4 chao_top.ngc chao_top.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o chao_top_map.ncd chao_top.ngd chao_top.pcf 
+par -w -intstyle ise -ol high -t 1 chao_top_map.ncd chao_top.ncd chao_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml chao_top.twx chao_top.ncd -o chao_top.twr chao_top.pcf -ucf chaoshengbo.ucf 
+bitgen -intstyle ise -f chao_top.ut chao_top.ncd 

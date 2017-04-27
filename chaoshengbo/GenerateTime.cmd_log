@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/ise/chaoshengbo/generateTime.v -lang verilog -prj chaoshengbo -o GenerateTime.spl -module GenerateTime -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e GenerateTime.spl C:/ise/chaoshengbo/GenerateTime.sym 
+vhdtdtfi -lang verilog -prj chaoshengbo -o C:/ise/chaoshengbo/GenerateTime.tfi -lib work C:/ise/chaoshengbo//generateTime.v -module GenerateTime -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

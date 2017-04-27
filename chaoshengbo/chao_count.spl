@@ -1,0 +1,9 @@
+[Inputs]
+clk
+echo
+[Outputs]
+echo_t
+[BiDir]
+[ATTRIBUTES]
+VeriModel chao_count
+

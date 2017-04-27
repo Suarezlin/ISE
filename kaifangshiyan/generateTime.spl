@@ -1,0 +1,9 @@
+[Inputs]
+clk
+clr
+[Outputs]
+clk_10us
+[BiDir]
+[ATTRIBUTES]
+VeriModel generateTime
+

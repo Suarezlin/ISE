@@ -1,0 +1,6 @@
+verilog work "x7seg.v"
+verilog work "chao_count.v"
+verilog work "chaoImpulse.v"
+verilog work "chao_top.v"
+verilog work "test_chao.v"
+verilog work "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v"

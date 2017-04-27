@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/ise/kaifangshiyan/generateTime.v -lang verilog -prj kaifangshiyan -o generateTime.spl -module generateTime -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e generateTime.spl C:/ise/kaifangshiyan/generateTime.sym 
+vhdtdtfi -lang verilog -prj kaifangshiyan -o C:/ise/kaifangshiyan/generateTime.tfi -lib work C:/ise/kaifangshiyan//generateTime.v -module generateTime -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

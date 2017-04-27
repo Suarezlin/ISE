@@ -1,0 +1,31 @@
+//! **************************************************************************
+// Written by: Map O.87xf on Wed Apr 26 22:35:57 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "an<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "J12" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "M13" LEVEL 1;
+COMP "echo" LOCATE = SITE "B2" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "K14" LEVEL 1;
+COMP "a_to_g<0>" LOCATE = SITE "M12" LEVEL 1;
+COMP "a_to_g<1>" LOCATE = SITE "L13" LEVEL 1;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "a_to_g<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "a_to_g<3>" LOCATE = SITE "N11" LEVEL 1;
+COMP "a_to_g<4>" LOCATE = SITE "N14" LEVEL 1;
+COMP "a_to_g<5>" LOCATE = SITE "H12" LEVEL 1;
+COMP "clr" LOCATE = SITE "G12" LEVEL 1;
+COMP "a_to_g<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "clkImpulse" LOCATE = SITE "A3" LEVEL 1;
+COMP "echo_t<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "echo_t<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "echo_t<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "echo_t<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "echo_t<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "echo_t<5>" LOCATE = SITE "N4" LEVEL 1;
+COMP "echo_t<6>" LOCATE = SITE "P4" LEVEL 1;
+COMP "echo_t<7>" LOCATE = SITE "G1" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

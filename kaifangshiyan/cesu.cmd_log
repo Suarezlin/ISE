@@ -1,0 +1,5 @@
+vhdtdtfi -lib work C:/ise/kaifangshiyan/cesu.v -lang verilog -prj kaifangshiyan -o cesu.spl -module cesu -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e cesu.spl C:/ise/kaifangshiyan/cesu.sym 
+vhdtdtfi -lib work C:/ise/kaifangshiyan/cesu.v -lang verilog -prj kaifangshiyan -o cesu.spl -module cesu -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e cesu.spl C:/ise/kaifangshiyan/cesu.sym 
+vhdtdtfi -lang verilog -prj kaifangshiyan -o C:/ise/kaifangshiyan/cesu.tfi -lib work C:/ise/kaifangshiyan//cesu.v -module cesu -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+gengerTime_1ms instance_name (
+    .clk(clk), 
+    .clr(clr), 
+    .clk_1ms(clk_1ms)
+    );
+
+

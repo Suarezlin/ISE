@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+generateTime instance_name (
+    .clk(clk), 
+    .clr(clr), 
+    .clk_10us(clk_10us)
+    );
+
+

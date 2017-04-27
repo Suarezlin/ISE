@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/ise/chaoshengbo/chao_count.v -lang verilog -prj chaoshengbo -o chao_count.spl -module chao_count -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e chao_count.spl C:/ise/chaoshengbo/chao_count.sym 
+vhdtdtfi -lang verilog -prj chaoshengbo -o C:/ise/chaoshengbo/chao_count.tfi -lib work C:/ise/chaoshengbo//chao_count.v -module chao_count -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

@@ -1,0 +1,6 @@
+vhdtdtfi -lib work C:/ise/chaoshengbo/chaoImpulse.v -lang verilog -prj chaoshengbo -o chaoImpulse.spl -module chaoImpulse -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e chaoImpulse.spl C:/ise/chaoshengbo/chaoImpulse.sym 
+vhdtdtfi -lang verilog -prj chaoshengbo -o C:/ise/chaoshengbo/chaoImpulse.tfi -lib work C:/ise/chaoshengbo//chaoImpulse.v -module chaoImpulse -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work C:/ise/chaoshengbo/chaoImpulse.v -lang verilog -prj chaoshengbo -o chaoImpulse.spl -module chaoImpulse -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e chaoImpulse.spl C:/ise/chaoshengbo/chaoImpulse.sym 
+vhdtdtfi -lang verilog -prj chaoshengbo -o C:/ise/chaoshengbo/chaoImpulse.tfi -lib work C:/ise/chaoshengbo//chaoImpulse.v -module chaoImpulse -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

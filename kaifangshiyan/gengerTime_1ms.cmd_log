@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/ise/kaifangshiyan/gengerTime_1ms.v -lang verilog -prj kaifangshiyan -o gengerTime_1ms.spl -module gengerTime_1ms -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e gengerTime_1ms.spl C:/ise/kaifangshiyan/gengerTime_1ms.sym 
+vhdtdtfi -lang verilog -prj kaifangshiyan -o C:/ise/kaifangshiyan/gengerTime_1ms.tfi -lib work C:/ise/kaifangshiyan//gengerTime_1ms.v -module gengerTime_1ms -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

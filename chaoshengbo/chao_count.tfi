@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+chao_count instance_name (
+    .clk(clk), 
+    .echo(echo), 
+    .echo_t(echo_t)
+    );
+
+

@@ -1,0 +1,8 @@
+[Inputs]
+clk
+[Outputs]
+clk_1Hz
+[BiDir]
+[ATTRIBUTES]
+VeriModel chaoImpulse
+

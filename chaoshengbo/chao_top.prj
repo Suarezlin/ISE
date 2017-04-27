@@ -1,0 +1,5 @@
+verilog work "x7seg.v"
+verilog work "generateTime.v"
+verilog work "chao_count.v"
+verilog work "chaoImpulse.v"
+verilog work "chao_top.v"

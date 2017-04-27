@@ -1,0 +1,149 @@
+ISim log file
+Running: C:\ise\chaoshengbo\test_chao_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/ise/chaoshengbo/test_chao_isim_beh.wdb 
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 28459410 ns : File "C:/ise/chaoshengbo/test_chao.v" Line 60
+# run all
+Stopped at time : 44655480 ns : File "C:/ise/chaoshengbo/test_chao.v" Line 60
+# run all
+Stopped at time : 112543790 ns : File "C:/ise/chaoshengbo/chaoImpulse.v" Line 35
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 45760770 ns : File "C:/ise/chaoshengbo/chaoImpulse.v" Line 28
+# run all
+Stopped at time : 308104210 ns : File "C:/ise/chaoshengbo/chaoImpulse.v" Line 49
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 54167990 ns : File "C:/ise/chaoshengbo/chaoImpulse.v" Line 49
+# run all
+Stopped at time : 347218670 ns : File "C:/ise/chaoshengbo/chao_count.v" Line 31
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 71272110 ns : File "C:/ise/chaoshengbo/chaoImpulse.v" Line 28
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 52301270 ns : File "C:/ise/chaoshengbo/x7seg.v" Line 37
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 67010950 ns : File "C:/ise/chaoshengbo/chaoImpulse.v" Line 28
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 34063730 ns : File "C:/ise/chaoshengbo/test_chao.v" Line 60
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 72221490 ns : File "C:/ise/chaoshengbo/chao_count.v" Line 32
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 36398780 ns : File "C:/ise/chaoshengbo/test_chao.v" Line 60
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 65927290 ns : File "C:/ise/chaoshengbo/chaoImpulse.v" Line 28
+# run all
+Stopped at time : 291397140 ns : File "C:/ise/chaoshengbo/test_chao.v" Line 60
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 69244870 ns : File "C:/ise/chaoshengbo/x7seg.v" Line 125
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 205277030 ns : File "C:/ise/chaoshengbo/test_chao.v" Line 60
+# run all
+Stopped at time : 1456264700 ns : File "C:/ise/chaoshengbo/test_chao.v" Line 60
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 227602350 ns : File "C:/ise/chaoshengbo/x7seg.v" Line 125
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 190848850 ns : File "C:/ise/chaoshengbo/test_chao.v" Line 60
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 255432660 ns : File "C:/ise/chaoshengbo/test_chao.v" Line 60
+# run all
+Stopped at time : 569915490 ns : File "C:/ise/chaoshengbo/chaoImpulse.v" Line 28
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 99086050 ns : File "C:/ise/chaoshengbo/test_chao.v" Line 60
+# run all
+Stopped at time : 125090670 ns : File "C:/ise/chaoshengbo/chaoImpulse.v" Line 27
+# run all
+Stopped at time : 424603210 ns : File "C:/ise/chaoshengbo/chao_count.v" Line 32
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 99378850 ns : File "C:/ise/chaoshengbo/test_chao.v" Line 60
+ISim O.87xf (signature 0x2f00eba5)
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# run all
+Stopped at time : 98214230 ns : File "C:/ise/chaoshengbo/chaoImpulse.v" Line 27

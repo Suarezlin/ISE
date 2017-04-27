@@ -1,0 +1,17 @@
+net "clk" loc=B8;
+net "clr" loc=A7;
+net "echo" loc=C5;
+net "clk_50us" loc=B7;
+#net "a_to_g[0]" loc="M12";
+#net "a_to_g[1]" loc="L13";
+#net "a_to_g[2]" loc="P12";
+#net "a_to_g[3]" loc="N11";
+#net "a_to_g[4]" loc="N14";
+#net "a_to_g[5]" loc="H12";
+#net "a_to_g[6]" loc="L14";
+#net "an[3]" loc="K14";
+#net "an[2]" loc="M13";
+#net "an[1]" loc="J12";
+#net "an[0]" loc="F12";
+net "start" loc=G12;
+net "echo_t" loc=M5;

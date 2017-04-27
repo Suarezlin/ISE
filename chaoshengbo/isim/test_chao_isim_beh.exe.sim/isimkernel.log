@@ -1,0 +1,10 @@
+Command line:
+   test_chao_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58330
+
+Wed Apr 26 22:12:42 2017
+
+
+ Elaboration Time: 0.0625 sec

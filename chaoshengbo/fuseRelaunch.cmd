@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/ise/chaoshengbo/test_chao_isim_beh.exe" -prj "C:/ise/chaoshengbo/test_chao_beh.prj" "work.test_chao" "work.glbl" 
