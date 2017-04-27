@@ -21,7 +21,6 @@
 module cnt60(
 		input wire clk_1,
 		input wire clk,
-		input wire clr,
 		input wire set_L,
 		input wire set_H,
 		output reg [3:0] cnt60_L,
@@ -32,14 +31,9 @@ module cnt60(
 		cnt60_L = 8;
 		cnt60_H = 5;
 	 end
-	 always @ ( posedge clr  or posedge clk_1)
+	 always @ ( posedge clk_1 )
 		begin
-			if ( clr == 1 )
-				begin
-					cnt60_L <= 0;
-					cnt60_H <= 0;
-				end
-			else if ( set_L == 1 )
+			if ( set_L == 1 )
 				begin
 					cnt60_L <= cnt60_L + 1;
 					if ( cnt60_L == 9 )
@@ -67,5 +61,7 @@ module cnt60(
 							carry <= 1;
 						end
 				end
+			else
+				carry <= 0;
 		end
 endmodule

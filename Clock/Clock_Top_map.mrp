@@ -9,33 +9,33 @@ Target Device  : xc3s100e
 Target Package : cp132
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Wed Apr 26 15:17:51 2017
+Mapped Date    : Thu Apr 27 09:44:40 2017
 
 Design Summary
 --------------
 Number of errors:      0
 Number of warnings:    0
 Logic Utilization:
-  Number of Slice Flip Flops:            71 out of   1,920    3%
-  Number of 4 input LUTs:                99 out of   1,920    5%
+  Number of Slice Flip Flops:            99 out of   1,920    5%
+  Number of 4 input LUTs:               107 out of   1,920    5%
 Logic Distribution:
-  Number of occupied Slices:             76 out of     960    7%
-    Number of Slices containing only related logic:      76 out of      76 100%
-    Number of Slices containing unrelated logic:          0 out of      76   0%
+  Number of occupied Slices:             98 out of     960   10%
+    Number of Slices containing only related logic:      98 out of      98 100%
+    Number of Slices containing unrelated logic:          0 out of      98   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         141 out of   1,920    7%
-    Number used as logic:                99
-    Number used as a route-thru:         42
+  Total Number of 4 input LUTs:         180 out of   1,920    9%
+    Number used as logic:               107
+    Number used as a route-thru:         73
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 18 out of      83   21%
-  Number of BUFGMUXs:                     2 out of      24    8%
+  Number of bonded IOBs:                 33 out of      83   39%
+  Number of BUFGMUXs:                     1 out of      24    4%
 
-Average Fanout of Non-Clock Nets:                2.80
+Average Fanout of Non-Clock Nets:                2.68
 
-Peak Memory Usage:  241 MB
+Peak Memory Usage:  242 MB
 Total REAL time to MAP completion:  1 secs 
 Total CPU time to MAP completion:   1 secs 
 
@@ -109,6 +109,21 @@ Section 6 - IOB Properties
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Second_Flash                       | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Second_H<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Second_H<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Second_H<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Second_H<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Second_L<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Second_L<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Second_L<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Second_L<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| Ssecond_H<0>                       | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Ssecond_H<1>                       | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Ssecond_H<2>                       | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Ssecond_L<0>                       | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Ssecond_L<1>                       | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Ssecond_L<2>                       | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| Ssecond_L<3>                       | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | a_to_g<0>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | a_to_g<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | a_to_g<2>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
@@ -121,7 +136,7 @@ Section 6 - IOB Properties
 | an<2>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | an<3>                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
 | clk                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
-| clr                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| set                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | set_hour_H                         | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | set_hour_L                         | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
 | set_minute_H                       | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |

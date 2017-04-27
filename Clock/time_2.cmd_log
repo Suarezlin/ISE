@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/ise/Clock/time_2.v -lang verilog -prj Clock -o time_2.spl -module time_2 -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e time_2.spl C:/ise/Clock/time_2.sym 
+vhdtdtfi -lang verilog -prj Clock -o C:/ise/Clock/time_2.tfi -lib work C:/ise/Clock//time_2.v -module time_2 -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

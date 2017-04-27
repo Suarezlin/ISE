@@ -1,0 +1,8 @@
+[Inputs]
+clk
+[Outputs]
+sec
+[BiDir]
+[ATTRIBUTES]
+VeriModel time_2
+

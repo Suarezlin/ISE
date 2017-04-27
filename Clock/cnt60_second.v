@@ -20,7 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 module cnt60_second(
 		input wire clk,
-		input wire clr,
+		input wire set,
+		input wire [2:0] second_H,
+		input wire [3:0] second_L,
 		output reg [3:0] cnt60_L,
 		output reg [3:0] cnt60_H,
 		output reg carry
@@ -29,12 +31,12 @@ module cnt60_second(
 		cnt60_L = 8;
 		cnt60_H = 5;
 	 end
-	 always @ ( posedge clk or posedge clr )
+	 always @ ( posedge clk or posedge set )
 		begin
-			if ( clr == 1 )
+			if ( set == 1 )
 				begin
-					cnt60_L <= 0;
-					cnt60_H <= 0;
+							cnt60_L <= second_L;
+							cnt60_H <= second_H;
 				end
 			else
 				begin

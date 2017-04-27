@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+time_2 instance_name (
+    .clk(clk), 
+    .sec(sec)
+    );
+
+

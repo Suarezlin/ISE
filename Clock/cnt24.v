@@ -21,7 +21,6 @@
 module cnt24(
 		input wire clk_1,
 		input wire clk,
-		input wire clr,
 		input wire set_L,
 		input wire set_H,
 		output reg [3:0] cnt24_L,
@@ -32,14 +31,9 @@ module cnt24(
 		cnt24_L = 3;
 		cnt24_H = 2;
 	 end
-	 always @ ( posedge clk_1 or posedge clr )
+	 always @ ( posedge clk_1 )
 		begin
-			if ( clr == 1 )
-				begin
-					cnt24_L <= 0;
-					cnt24_H <= 0;
-				end
-			else if ( set_L == 1 )
+			if ( set_L == 1 )
 				begin
 					cnt24_L <= cnt24_L + 1;
 					if ( cnt24_H==2 && cnt24_L == 3 )

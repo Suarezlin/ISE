@@ -1,3 +1,4 @@
+verilog work "time_2.v"
 verilog work "SecondPulse.v"
 verilog work "disp.v"
 verilog work "cnt60_second.v"
