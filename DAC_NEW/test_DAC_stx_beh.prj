@@ -1,0 +1,6 @@
+verilog isim_temp "wave_select.v"
+verilog isim_temp "phase_tiaozhi.v"
+verilog isim_temp "frequency_tiaozhi.v"
+verilog isim_temp "DAC_Top.v"
+verilog isim_temp "test_DAC.v"
+verilog isim_temp "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v"

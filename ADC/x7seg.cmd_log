@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj ADC -o C:/ise/ADC/x7seg.tfi -lib work C:/ise/ADC//x7seg.v -module x7seg -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

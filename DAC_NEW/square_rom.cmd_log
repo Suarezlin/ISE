@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj DAC_NEW -o C:/ise/DAC_NEW/square_rom.tfi -lib work C:/ise/DAC_NEW//square_rom.v -module square_rom -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

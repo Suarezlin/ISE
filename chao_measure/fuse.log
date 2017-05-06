@@ -1,0 +1,26 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/ise/chao_measure/est_chaomeasure_isim_beh.exe" -prj "C:/ise/chao_measure/est_chaomeasure_beh.prj" "work.est_chaomeasure" "work.glbl" 
+ISim O.87xf (signature 0x2f00eba5)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/ise/chao_measure/x7seg.v" into library work
+Analyzing Verilog file "C:/ise/chao_measure/DistanceMeasure.v" into library work
+Analyzing Verilog file "C:/ise/chao_measure/DevideFrequency.v" into library work
+Analyzing Verilog file "C:/ise/chao_measure/chao_measure.v" into library work
+Analyzing Verilog file "C:/ise/chao_measure/est_chaomeasure.v" into library work
+Analyzing Verilog file "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 158992 KB
+Fuse CPU Usage: 187 ms
+Compiling module DevideFrequency
+Compiling module DIstanceMeasure
+Compiling module x7seg
+Compiling module chao_measure
+Compiling module est_chaomeasure
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 6 Verilog Units
+Built simulation executable C:/ise/chao_measure/est_chaomeasure_isim_beh.exe
+Fuse Memory Usage: 164304 KB
+Fuse CPU Usage: 281 ms

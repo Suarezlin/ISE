@@ -1,0 +1,10 @@
+
+
+
+// Instantiate the module
+DevideFrequency instance_name (
+    .clk(clk), 
+    .clk_1MHz(clk_1MHz)
+    );
+
+

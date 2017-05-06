@@ -1,0 +1,4 @@
+verilog isim_temp "GenerateTime.v"
+verilog isim_temp "myRegister.v"
+verilog isim_temp "test_register.v"
+verilog isim_temp "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,8 @@
+Release 13.4 Drc O.87xf (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Thu May 04 09:38:07 2017
+
+drc -z ADC_Top.ncd ADC_Top.pcf
+
+DRC detected 0 errors and 0 warnings.

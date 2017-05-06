@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+x7seg instance_name (
+    .clk(clk), 
+    .Dis(Dis), 
+    .a_to_g(a_to_g)
+    );
+
+

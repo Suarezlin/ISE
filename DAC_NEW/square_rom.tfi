@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+square_rom instance_name (
+    .clk(clk), 
+    .address(address), 
+    .square_data(square_data)
+    );
+
+

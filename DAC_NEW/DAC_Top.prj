@@ -1,0 +1,7 @@
+verilog work "wave_select.v"
+verilog work "phase_tiaozhi.v"
+verilog work "ipcore_dir/triangular.v"
+verilog work "ipcore_dir/square.v"
+verilog work "ipcore_dir/sin.v"
+verilog work "frequency_tiaozhi.v"
+verilog work "DAC_Top.v"

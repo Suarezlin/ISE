@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+DIstanceMeasure instance_name (
+    .clk(clk), 
+    .echo(echo), 
+    .trig(trig), 
+    .Dis(Dis)
+    );
+
+

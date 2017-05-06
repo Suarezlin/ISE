@@ -1,0 +1,8 @@
+[Inputs]
+clk
+[Outputs]
+clk_1MHz
+[BiDir]
+[ATTRIBUTES]
+VeriModel DevideFrequency
+

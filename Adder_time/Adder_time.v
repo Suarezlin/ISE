@@ -27,6 +27,10 @@ module Adder_time(
     );
 	 reg[25:0] jsq;
 	 reg clk_1Hz;
+	 initial begin
+		jsq = 0;
+		q = 0;
+	 end
 	 always @ (posedge clk)
 		begin
 			if (jsq<25000000)

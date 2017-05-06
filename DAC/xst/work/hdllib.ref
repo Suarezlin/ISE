@@ -1,0 +1,3 @@
+MO rom_sin NULL ipcore_dir/rom_sin.v vlg33/rom__sin.bin 1493793812
+MO DAC_Top NULL DAC_Top.v vlg1E/_d_a_c___top.bin 1493793812
+MO DAC NULL DAC.v vlg2C/_d_a_c.bin 1493793812

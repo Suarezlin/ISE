@@ -1,0 +1,3 @@
+verilog work "ipcore_dir/rom_sin.v"
+verilog work "DAC.v"
+verilog work "DAC_Top.v"

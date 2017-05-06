@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+ADC instance_name (
+    .clk(clk), 
+    .sdata(sdata), 
+    .sclk(sclk), 
+    .cs(cs), 
+    .led0(led0), 
+    .led1(led1), 
+    .led2(led2), 
+    .led3(led3)
+    );
+
+

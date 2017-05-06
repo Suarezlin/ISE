@@ -1,0 +1,9 @@
+[Inputs]
+clk
+=Dis[3:0]=
+[Outputs]
+=a_to_g[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel x7seg
+

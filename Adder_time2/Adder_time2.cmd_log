@@ -12,3 +12,4 @@ map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Adder_t
 par -w -intstyle ise -ol high -t 1 Adder_time2_map.ncd Adder_time2.ncd Adder_time2.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Adder_time2.twx Adder_time2.ncd -o Adder_time2.twr Adder_time2.pcf -ucf Adder_time2.ucf 
 bitgen -intstyle ise -f Adder_time2.ut Adder_time2.ncd 
+xst -intstyle ise -ifn "C:/ise/Adder_time2/Adder_time2.xst" -ofn "C:/ise/Adder_time2/Adder_time2.syr" 

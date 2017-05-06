@@ -1,0 +1,21 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/ise/Adder_time2/test_isim_beh.exe -prj C:/ise/Adder_time2/test_beh.prj work.test work.glbl 
+ISim O.87xf (signature 0x2f00eba5)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/ise/Adder_time2/Adder_time2.v" into library work
+Analyzing Verilog file "C:/ise/Adder_time2/test.v" into library work
+Analyzing Verilog file "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 159120 KB
+Fuse CPU Usage: 218 ms
+Compiling module Adder_time2
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable C:/ise/Adder_time2/test_isim_beh.exe
+Fuse Memory Usage: 163568 KB
+Fuse CPU Usage: 249 ms

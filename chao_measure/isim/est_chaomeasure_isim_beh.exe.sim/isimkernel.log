@@ -1,0 +1,10 @@
+Command line:
+   est_chaomeasure_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51331
+
+Mon May 01 10:47:13 2017
+
+
+ Elaboration Time: 0.0625 sec

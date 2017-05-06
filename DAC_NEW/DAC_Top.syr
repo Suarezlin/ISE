@@ -1,0 +1,495 @@
+Release 13.4 - xst O.87xf (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: DAC_Top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DAC_Top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DAC_Top"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : DAC_Top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "wave_select.v" in library work
+Compiling verilog file "phase_tiaozhi.v" in library work
+Module <wave_select> compiled
+Compiling verilog file "ipcore_dir/triangular.v" in library work
+Module <phase_tiaozhi> compiled
+Compiling verilog file "ipcore_dir/square.v" in library work
+Module <triangular> compiled
+Compiling verilog file "ipcore_dir/sin.v" in library work
+Module <square> compiled
+Compiling verilog file "frequency_tiaozhi.v" in library work
+Module <sin> compiled
+Compiling verilog file "DAC_Top.v" in library work
+Module <frequency_tiaozhi> compiled
+Module <DAC_Top> compiled
+No errors in compilation
+Analysis of file <"DAC_Top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <DAC_Top> in library <work>.
+
+Analyzing hierarchy for module <frequency_tiaozhi> in library <work>.
+
+Analyzing hierarchy for module <phase_tiaozhi> in library <work>.
+
+Analyzing hierarchy for module <wave_select> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <DAC_Top>.
+WARNING:Xst:2211 - "ipcore_dir/sin.v" line 66: Instantiating black box module <sin>.
+WARNING:Xst:2211 - "ipcore_dir/square.v" line 71: Instantiating black box module <square>.
+WARNING:Xst:2211 - "ipcore_dir/triangular.v" line 76: Instantiating black box module <triangular>.
+Module <DAC_Top> is correct for synthesis.
+ 
+Analyzing module <frequency_tiaozhi> in library <work>.
+Module <frequency_tiaozhi> is correct for synthesis.
+ 
+Analyzing module <phase_tiaozhi> in library <work>.
+Module <phase_tiaozhi> is correct for synthesis.
+ 
+Analyzing module <wave_select> in library <work>.
+Module <wave_select> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <frequency_tiaozhi>.
+    Related source file is "frequency_tiaozhi.v".
+    Found 8-bit up accumulator for signal <result>.
+    Summary:
+	inferred   1 Accumulator(s).
+Unit <frequency_tiaozhi> synthesized.
+
+
+Synthesizing Unit <phase_tiaozhi>.
+    Related source file is "phase_tiaozhi.v".
+    Found 8-bit adder for signal <address>.
+    Found 8-bit register for signal <phase_reg>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <phase_tiaozhi> synthesized.
+
+
+Synthesizing Unit <wave_select>.
+    Related source file is "wave_select.v".
+    Found 8-bit 4-to-1 multiplexer for signal <dds_data>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <wave_select> synthesized.
+
+
+Synthesizing Unit <DAC_Top>.
+    Related source file is "DAC_Top.v".
+WARNING:Xst:646 - Signal <dds_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <din>.
+    Found 1-bit register for signal <sclk>.
+    Found 1-bit register for signal <sync>.
+    Found 16-bit register for signal <data>.
+    Found 5-bit up counter for signal <j>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  19 D-type flip-flop(s).
+Unit <DAC_Top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 1
+ 5-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 8-bit up accumulator                                  : 1
+# Registers                                            : 20
+ 1-bit register                                        : 19
+ 8-bit register                                        : 1
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/sin.ngc>.
+Reading core <ipcore_dir/square.ngc>.
+Reading core <ipcore_dir/triangular.ngc>.
+Loading core <sin> for timing and area information for instance <U4>.
+Loading core <square> for timing and area information for instance <U5>.
+Loading core <triangular> for timing and area information for instance <U6>.
+WARNING:Xst:1290 - Hierarchical block <U3> is unconnected in block <DAC_Top>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <phase_reg_0> in Unit <U2> is equivalent to the following 7 FFs/Latches, which will be removed : <phase_reg_1> <phase_reg_2> <phase_reg_3> <phase_reg_4> <phase_reg_5> <phase_reg_6> <phase_reg_7> 
+WARNING:Xst:1710 - FF/Latch <phase_reg_0> (without init value) has a constant value of 0 in block <U2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <phase_reg<7:0>> (without init value) have a constant value of 0 in block <phase_tiaozhi>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder                                           : 1
+# Counters                                             : 1
+ 5-bit up counter                                      : 1
+# Accumulators                                         : 1
+ 8-bit up accumulator                                  : 1
+# Registers                                            : 19
+ Flip-Flops                                            : 19
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <U1/result_0> (without init value) has a constant value of 0 in block <DAC_Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <U1/result_1> (without init value) has a constant value of 0 in block <DAC_Top>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <DAC_Top> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DAC_Top, actual ratio is 2.
+
+Final Macro Processing ...
+
+Processing Unit <DAC_Top> :
+	Found 6-bit shift register for signal <data_13>.
+Unit <DAC_Top> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+# Shift Registers                                      : 1
+ 6-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DAC_Top.ngr
+Top Level Output File Name         : DAC_Top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 7
+
+Cell Usage :
+# BELS                             : 34
+#      GND                         : 4
+#      INV                         : 3
+#      LUT2                        : 4
+#      LUT2_D                      : 1
+#      LUT3                        : 4
+#      LUT3_L                      : 1
+#      LUT4                        : 11
+#      LUT4_D                      : 2
+#      VCC                         : 4
+# FlipFlops/Latches                : 31
+#      FD                          : 9
+#      FDC                         : 6
+#      FDR                         : 15
+#      FDS                         : 1
+# RAMS                             : 3
+#      RAMB16_S36_S36              : 3
+# Shift Registers                  : 1
+#      SRL16                       : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 1
+#      OBUF                        : 3
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       16  out of    960     1%  
+ Number of Slice Flip Flops:             31  out of   1920     1%  
+ Number of 4 input LUTs:                 27  out of   1920     1%  
+    Number used as logic:                26
+    Number used as Shift registers:       1
+ Number of IOs:                           7
+ Number of bonded IOBs:                   5  out of     83     6%  
+ Number of BRAMs:                         3  out of      4    75%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 10    |
+sclk_OBUF1                         | BUFG                   | 25    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst_n_inv(rst_n_inv1_INV_0:O)      | NONE(U1/result_2)      | 6     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.009ns (Maximum Frequency: 199.641MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.394ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.774ns (frequency: 264.971MHz)
+  Total number of paths / destination ports: 58 / 43
+-------------------------------------------------------------------------
+Delay:               3.774ns (Levels of Logic = 2)
+  Source:            U1/result_2 (FF)
+  Destination:       U1/result_7 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: U1/result_2 to U1/result_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             11   0.591   1.012  U1/result_2 (U1/result_2)
+     LUT4_D:I1->O          1   0.704   0.455  U1/Maccum_result_cy<5>11 (U1/Maccum_result_cy<5>)
+     LUT3:I2->O            1   0.704   0.000  U1/Maccum_result_xor<7>11 (Result<7>)
+     FDC:D                     0.308          U1/result_7
+    ----------------------------------------
+    Total                      3.774ns (2.307ns logic, 1.467ns route)
+                                       (61.1% logic, 38.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sclk_OBUF1'
+  Clock period: 5.009ns (frequency: 199.641MHz)
+  Total number of paths / destination ports: 143 / 37
+-------------------------------------------------------------------------
+Delay:               5.009ns (Levels of Logic = 2)
+  Source:            j_2 (FF)
+  Destination:       data_14 (FF)
+  Source Clock:      sclk_OBUF1 rising
+  Destination Clock: sclk_OBUF1 rising
+
+  Data Path: j_2 to data_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             11   0.591   1.012  j_2 (j_2)
+     LUT2_D:I1->LO         1   0.704   0.104  data_15_cmp_eq0000_SW0 (N31)
+     LUT4:I3->O           13   0.704   0.983  data_15_cmp_eq0000 (data_15_cmp_eq0000)
+     FDS:S                     0.911          data_14
+    ----------------------------------------
+    Total                      5.009ns (2.910ns logic, 2.099ns route)
+                                       (58.1% logic, 41.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'sclk_OBUF1'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            din (FF)
+  Destination:       din (PAD)
+  Source Clock:      sclk_OBUF1 rising
+
+  Data Path: din to din
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.591   0.420  din (din_OBUF)
+     OBUF:I->O                 3.272          din_OBUF (din)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            sclk (FF)
+  Destination:       sclk (PAD)
+  Source Clock:      clk rising
+
+  Data Path: sclk to sclk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.531  sclk (sclk_OBUF1)
+     OBUF:I->O                 3.272          sclk_OBUF (sclk)
+    ----------------------------------------
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.28 secs
+ 
+--> 
+
+Total memory usage is 250484 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -26,6 +26,7 @@ module Counter_10(
 		input wire [3:0] in,
 		output reg [7:0] q
     );
+	 initial q = 0;
 	 always @ ( posedge clk_1Hz or posedge clr or posedge load)
 		begin
 			if ( clr == 1 )

@@ -1,0 +1,41 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/ise/DAC_NEW/test_DAC_isim_beh.exe -prj C:/ise/DAC_NEW/test_DAC_beh.prj work.test_DAC work.glbl 
+ISim O.87xf (signature 0x2f00eba5)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/ise/DAC_NEW/wave_select.v" into library work
+Analyzing Verilog file "C:/ise/DAC_NEW/phase_tiaozhi.v" into library work
+Analyzing Verilog file "C:/ise/DAC_NEW/ipcore_dir/triangular.v" into library work
+Analyzing Verilog file "C:/ise/DAC_NEW/ipcore_dir/square.v" into library work
+Analyzing Verilog file "C:/ise/DAC_NEW/ipcore_dir/sin.v" into library work
+Analyzing Verilog file "C:/ise/DAC_NEW/frequency_tiaozhi.v" into library work
+Analyzing Verilog file "C:/ise/DAC_NEW/DAC_Top.v" into library work
+Analyzing Verilog file "C:/ise/DAC_NEW/test_DAC.v" into library work
+Analyzing Verilog file "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 159952 KB
+Fuse CPU Usage: 311 ms
+Compiling module frequency_tiaozhi
+Compiling module phase_tiaozhi
+Compiling module wave_select
+Compiling module BLK_MEM_GEN_V6_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V6_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V6_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V6_3(C_FAMILY="spart...
+Compiling module sin
+Compiling module BLK_MEM_GEN_V6_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V6_3(C_FAMILY="spart...
+Compiling module square
+Compiling module BLK_MEM_GEN_V6_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V6_3(C_FAMILY="spart...
+Compiling module triangular
+Compiling module DAC_Top
+Compiling module test_DAC
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 17 Verilog Units
+Built simulation executable C:/ise/DAC_NEW/test_DAC_isim_beh.exe
+Fuse Memory Usage: 167152 KB
+Fuse CPU Usage: 530 ms

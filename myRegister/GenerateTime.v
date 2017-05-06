@@ -23,6 +23,8 @@ module GenerateTime(
 		output reg clk_1
     );
 	 reg[25:0] jsq;
+	 initial
+		jsq = 0;
 	 always @ (posedge clk)
 		begin
 			if (jsq<50000000)

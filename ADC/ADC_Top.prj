@@ -1,0 +1,3 @@
+verilog work "x7seg.v"
+verilog work "ADC.v"
+verilog work "ADC_Top.v"

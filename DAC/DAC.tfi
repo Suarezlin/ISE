@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+DAC instance_name (
+    .clk(clk), 
+    .ctrl(ctrl), 
+    .din(din), 
+    .sclk(sclk), 
+    .sync(sync)
+    );
+
+

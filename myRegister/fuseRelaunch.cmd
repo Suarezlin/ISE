@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/ise/myRegister/test_register_isim_beh.exe" -prj "C:/ise/myRegister/test_register_beh.prj" "work.test_register" "work.glbl" 

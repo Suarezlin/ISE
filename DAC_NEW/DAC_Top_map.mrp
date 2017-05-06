@@ -1,0 +1,301 @@
+Release 13.4 Map O.87xf (nt)
+Xilinx Mapping Report File for Design 'DAC_Top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off
+-c 100 -o DAC_Top_map.ncd DAC_Top.ngd DAC_Top.pcf 
+Target Device  : xc3s100e
+Target Package : cp132
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Thu May 04 09:08:45 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   30
+Logic Utilization:
+  Number of Slice Flip Flops:            31 out of   1,920    1%
+  Number of 4 input LUTs:                24 out of   1,920    1%
+Logic Distribution:
+  Number of occupied Slices:             22 out of     960    2%
+    Number of Slices containing only related logic:      22 out of      22 100%
+    Number of Slices containing unrelated logic:          0 out of      22   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:          24 out of   1,920    1%
+    Number used as logic:                23
+    Number used as Shift registers:       1
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                  7 out of      83    8%
+  Number of RAMB16s:                      1 out of       4   25%
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+Average Fanout of Non-Clock Nets:                2.62
+
+Peak Memory Usage:  241 MB
+Total REAL time to MAP completion:  1 secs 
+Total CPU time to MAP completion:   1 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:367 - The signal <wave<0>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <wave<1>_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB1> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB2> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB3> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB4> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB5> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB6> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB7> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB9> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB10> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB11> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB12> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB13> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB14> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB15> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB17> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB18> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB19> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB20> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB21> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB22> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB23> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB25> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB26> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB27> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB28> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB29> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB30> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+WARNING:PhysDesignRules:812 - Dangling pin <DOB31> on
+   block:<U4/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/r
+   amloop[0].ram.r/s3_init.ram/spram.ram.B>:<RAMB16_RAMB16B>.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network wave<1>_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 17 more times for the
+   following (max. 5 shown):
+   wave<0>_IBUF,
+   U5/douta<7>,
+   U5/douta<6>,
+   U5/douta<5>,
+   U5/douta<4>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   6 block(s) removed
+   5 block(s) optimized away
+  20 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "U5/douta<7>" is sourceless and has been removed.
+The signal "U5/douta<6>" is sourceless and has been removed.
+The signal "U5/douta<5>" is sourceless and has been removed.
+The signal "U5/douta<4>" is sourceless and has been removed.
+The signal "U5/douta<3>" is sourceless and has been removed.
+The signal "U5/douta<2>" is sourceless and has been removed.
+The signal "U5/douta<1>" is sourceless and has been removed.
+The signal "U5/douta<0>" is sourceless and has been removed.
+The signal "U5/N0" is sourceless and has been removed.
+The signal "U5/N1" is sourceless and has been removed.
+The signal "U6/douta<7>" is sourceless and has been removed.
+The signal "U6/douta<6>" is sourceless and has been removed.
+The signal "U6/douta<5>" is sourceless and has been removed.
+The signal "U6/douta<4>" is sourceless and has been removed.
+The signal "U6/douta<3>" is sourceless and has been removed.
+The signal "U6/douta<2>" is sourceless and has been removed.
+The signal "U6/douta<1>" is sourceless and has been removed.
+The signal "U6/douta<0>" is sourceless and has been removed.
+The signal "U6/N0" is sourceless and has been removed.
+The signal "U6/N1" is sourceless and has been removed.
+Unused block
+"U5/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0]
+.ram.r/s3_init.ram/spram.ram" (RAMB16_S36_S36) removed.
+Unused block "U5/XST_GND" (ZERO) removed.
+Unused block "U5/XST_VCC" (ONE) removed.
+Unused block
+"U6/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0]
+.ram.r/s3_init.ram/spram.ram" (RAMB16_S36_S36) removed.
+Unused block "U6/XST_GND" (ZERO) removed.
+Unused block "U6/XST_VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		U4/XST_GND
+VCC 		U4/XST_VCC
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| clk                                | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| din                                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| rst_n                              | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| sclk                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| sync                               | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          | 0 / 0    |
+| wave<0>                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
+| wave<1>                            | IBUF             | INPUT     | LVCMOS25             |       |          |      |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

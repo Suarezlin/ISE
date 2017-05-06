@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map O.87xf on Thu May 04 09:08:46 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "B8" LEVEL 1;
+COMP "sclk" LOCATE = SITE "B5" LEVEL 1;
+COMP "sync" LOCATE = SITE "B2" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "N3" LEVEL 1;
+COMP "wave<0>" LOCATE = SITE "P11" LEVEL 1;
+COMP "wave<1>" LOCATE = SITE "L3" LEVEL 1;
+COMP "din" LOCATE = SITE "A3" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

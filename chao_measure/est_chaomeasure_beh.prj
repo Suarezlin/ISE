@@ -1,0 +1,6 @@
+verilog work "x7seg.v"
+verilog work "DistanceMeasure.v"
+verilog work "DevideFrequency.v"
+verilog work "chao_measure.v"
+verilog work "est_chaomeasure.v"
+verilog work "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v"

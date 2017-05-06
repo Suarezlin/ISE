@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/ise/DAC_NEW/test_DAC_isim_beh.exe" -prj "C:/ise/DAC_NEW/test_DAC_beh.prj" "work.test_DAC" "work.glbl" 

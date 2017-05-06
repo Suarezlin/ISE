@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+DA instance_name (
+    .clk(clk), 
+    .sdata(sdata), 
+    .din(din), 
+    .sclk(sclk), 
+    .sync(sync)
+    );
+
+

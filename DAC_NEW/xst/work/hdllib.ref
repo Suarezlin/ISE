@@ -1,0 +1,10 @@
+MO sin NULL ipcore_dir/sin.v vlg36/sin.bin 1493860115
+MO sin_rom NULL sin_rom.v vlg73/sin__rom.bin 1493858995
+MO square_rom NULL square_rom.v vlg76/square__rom.bin 1493858995
+MO DAC_Top NULL DAC_Top.v vlg1E/_d_a_c___top.bin 1493860115
+MO triangular NULL ipcore_dir/triangular.v vlg15/triangular.bin 1493860115
+MO trai_rom NULL trai_rom.v vlg71/trai__rom.bin 1493858995
+MO wave_select NULL wave_select.v vlg32/wave__select.bin 1493860115
+MO square NULL ipcore_dir/square.v vlg69/square.bin 1493860115
+MO frequency_tiaozhi NULL frequency_tiaozhi.v vlg61/frequency__tiaozhi.bin 1493860115
+MO phase_tiaozhi NULL phase_tiaozhi.v vlg18/phase__tiaozhi.bin 1493860115

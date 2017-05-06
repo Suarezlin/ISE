@@ -1,0 +1,5 @@
+verilog work "x7segdot.v"
+verilog work "x7seg.v"
+verilog work "DistanceMeasure.v"
+verilog work "DevideFrequency.v"
+verilog work "chao_measure.v"

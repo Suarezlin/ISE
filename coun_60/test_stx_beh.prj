@@ -1,0 +1,6 @@
+verilog isim_temp "x7seg.v"
+verilog isim_temp "GenerateTime.v"
+verilog isim_temp "counter.v"
+verilog isim_temp "top.v"
+verilog isim_temp "test.v"
+verilog isim_temp "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v"

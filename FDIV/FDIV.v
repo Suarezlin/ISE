@@ -23,6 +23,8 @@ module FDIV(
 		output reg clk_1Hz
     );
 	 reg[26:0] jsq;
+	 initial
+		jsq = 0;
 	 always @ (posedge clk_50mHz)
 		begin
 			if (jsq < 75000000)

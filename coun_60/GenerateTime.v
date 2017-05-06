@@ -22,7 +22,7 @@ module GenerateTime(
 		input clk_50mHz,
 		output reg clk_1Hz
     );
-	 reg [25:0] jsq;
+	 reg [25:0] jsq = 0;
 	 always @ ( posedge clk_50mHz )
 		begin
 			if (jsq<25000000)

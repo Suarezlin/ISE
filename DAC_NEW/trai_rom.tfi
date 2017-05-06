@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+trai_rom instance_name (
+    .clk(clk), 
+    .address(address), 
+    .triangular_data(triangular_data)
+    );
+
+

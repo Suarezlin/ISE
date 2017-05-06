@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj ADC -o C:/ise/ADC/ADC.tfi -lib work C:/ise/ADC//ADC.v -module ADC -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

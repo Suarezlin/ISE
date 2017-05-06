@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/ise/chao_measure/DistanceMeasure.v -lang verilog -prj chao_measure -o DIstanceMeasure.spl -module DIstanceMeasure -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e DIstanceMeasure.spl C:/ise/chao_measure/DIstanceMeasure.sym 
+vhdtdtfi -lang verilog -prj chao_measure -o C:/ise/chao_measure/DIstanceMeasure.tfi -lib work C:/ise/chao_measure//DistanceMeasure.v -module DIstanceMeasure -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

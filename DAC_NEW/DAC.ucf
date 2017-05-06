@@ -1,0 +1,7 @@
+net "clk" loc=B8;
+net "sync" loc=B2;
+net "sclk" loc=B5;
+net "din" loc=A3;
+net "rst_n" loc=N3;
+net "wave[1]" loc=L3;
+net "wave[0]" loc=P11;

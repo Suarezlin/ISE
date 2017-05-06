@@ -22,14 +22,27 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/ise/FDIV/FDIV.v";
-static int ng1[] = {25000000, 0};
-static int ng2[] = {1, 0};
-static int ng3[] = {50000000, 0};
-static int ng4[] = {0, 0};
+static int ng1[] = {0, 0};
+static int ng2[] = {75000000, 0};
+static int ng3[] = {1, 0};
+static int ng4[] = {150000000, 0};
 
 
 
-static void Always_26_0(char *t0)
+static void Initial_26_0(char *t0)
+{
+    char *t1;
+    char *t2;
+
+LAB0:    xsi_set_current_line(27, ng0);
+    t1 = ((char*)((ng1)));
+    t2 = (t0 + 920);
+    xsi_vlogvar_assign_value(t2, t1, 0, 0, 27);
+
+LAB1:    return;
+}
+
+static void Always_28_1(char *t0)
 {
     char t8[8];
     char t22[8];
@@ -67,28 +80,28 @@ static void Always_26_0(char *t0)
     unsigned int t34;
     unsigned int t35;
 
-LAB0:    t1 = (t0 + 1444U);
+LAB0:    t1 = (t0 + 1588U);
     t2 = *((char **)t1);
     if (t2 == 0)
         goto LAB2;
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(26, ng0);
-    t2 = (t0 + 1640);
+LAB2:    xsi_set_current_line(28, ng0);
+    t2 = (t0 + 1784);
     *((int *)t2) = 1;
-    t3 = (t0 + 1472);
+    t3 = (t0 + 1616);
     *((char **)t3) = t2;
     *((char **)t1) = &&LAB4;
 
 LAB1:    return;
-LAB4:    xsi_set_current_line(27, ng0);
+LAB4:    xsi_set_current_line(29, ng0);
 
-LAB5:    xsi_set_current_line(28, ng0);
+LAB5:    xsi_set_current_line(30, ng0);
     t4 = (t0 + 920);
     t5 = (t4 + 36U);
     t6 = *((char **)t5);
-    t7 = ((char*)((ng1)));
+    t7 = ((char*)((ng2)));
     memset(t8, 0, 8);
     t9 = (t6 + 4);
     if (*((unsigned int *)t9) != 0)
@@ -110,11 +123,11 @@ LAB9:    t12 = (t8 + 4);
     if (t17 > 0)
         goto LAB11;
 
-LAB12:    xsi_set_current_line(33, ng0);
+LAB12:    xsi_set_current_line(35, ng0);
     t2 = (t0 + 920);
     t3 = (t2 + 36U);
     t4 = *((char **)t3);
-    t5 = ((char*)((ng3)));
+    t5 = ((char*)((ng4)));
     memset(t8, 0, 8);
     t6 = (t4 + 4);
     t7 = (t5 + 4);
@@ -147,19 +160,19 @@ LAB18:    t10 = (t8 + 4);
     if (t35 > 0)
         goto LAB19;
 
-LAB20:    xsi_set_current_line(39, ng0);
+LAB20:    xsi_set_current_line(41, ng0);
 
-LAB23:    xsi_set_current_line(40, ng0);
+LAB23:    xsi_set_current_line(42, ng0);
     t2 = (t0 + 920);
     t3 = (t2 + 36U);
     t4 = *((char **)t3);
-    t5 = ((char*)((ng2)));
+    t5 = ((char*)((ng3)));
     memset(t8, 0, 8);
-    xsi_vlog_unsigned_add(t8, 32, t4, 26, t5, 32);
+    xsi_vlog_unsigned_add(t8, 32, t4, 27, t5, 32);
     t6 = (t0 + 920);
-    xsi_vlogvar_wait_assign_value(t6, t8, 0, 0, 26, 0LL);
-    xsi_set_current_line(41, ng0);
-    t2 = ((char*)((ng4)));
+    xsi_vlogvar_wait_assign_value(t6, t8, 0, 0, 27, 0LL);
+    xsi_set_current_line(43, ng0);
+    t2 = ((char*)((ng1)));
     t3 = (t0 + 828);
     xsi_vlogvar_wait_assign_value(t3, t2, 0, 0, 1, 0LL);
 
@@ -174,19 +187,19 @@ LAB7:    t11 = (t8 + 4);
 LAB8:    *((unsigned int *)t8) = 1;
     goto LAB9;
 
-LAB11:    xsi_set_current_line(29, ng0);
+LAB11:    xsi_set_current_line(31, ng0);
 
-LAB14:    xsi_set_current_line(30, ng0);
+LAB14:    xsi_set_current_line(32, ng0);
     t18 = (t0 + 920);
     t19 = (t18 + 36U);
     t20 = *((char **)t19);
-    t21 = ((char*)((ng2)));
+    t21 = ((char*)((ng3)));
     memset(t22, 0, 8);
-    xsi_vlog_unsigned_add(t22, 32, t20, 26, t21, 32);
+    xsi_vlog_unsigned_add(t22, 32, t20, 27, t21, 32);
     t23 = (t0 + 920);
-    xsi_vlogvar_wait_assign_value(t23, t22, 0, 0, 26, 0LL);
-    xsi_set_current_line(31, ng0);
-    t2 = ((char*)((ng2)));
+    xsi_vlogvar_wait_assign_value(t23, t22, 0, 0, 27, 0LL);
+    xsi_set_current_line(33, ng0);
+    t2 = ((char*)((ng3)));
     t3 = (t0 + 828);
     xsi_vlogvar_wait_assign_value(t3, t2, 0, 0, 1, 0LL);
     goto LAB13;
@@ -196,14 +209,14 @@ LAB17:    t9 = (t8 + 4);
     *((unsigned int *)t9) = 1;
     goto LAB18;
 
-LAB19:    xsi_set_current_line(34, ng0);
+LAB19:    xsi_set_current_line(36, ng0);
 
-LAB22:    xsi_set_current_line(35, ng0);
-    t11 = ((char*)((ng4)));
+LAB22:    xsi_set_current_line(37, ng0);
+    t11 = ((char*)((ng1)));
     t12 = (t0 + 920);
-    xsi_vlogvar_wait_assign_value(t12, t11, 0, 0, 26, 0LL);
-    xsi_set_current_line(36, ng0);
-    t2 = ((char*)((ng4)));
+    xsi_vlogvar_wait_assign_value(t12, t11, 0, 0, 27, 0LL);
+    xsi_set_current_line(38, ng0);
+    t2 = ((char*)((ng1)));
     t3 = (t0 + 828);
     xsi_vlogvar_wait_assign_value(t3, t2, 0, 0, 1, 0LL);
     goto LAB21;
@@ -213,7 +226,7 @@ LAB22:    xsi_set_current_line(35, ng0);
 
 extern void work_m_00000000000395355854_3846026535_init()
 {
-	static char *pe[] = {(void *)Always_26_0};
+	static char *pe[] = {(void *)Initial_26_0,(void *)Always_28_1};
 	xsi_register_didat("work_m_00000000000395355854_3846026535", "isim/text_FDIV_isim_beh.exe.sim/work/m_00000000000395355854_3846026535.didat");
 	xsi_register_executes(pe);
 }

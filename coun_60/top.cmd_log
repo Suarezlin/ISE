@@ -7,3 +7,4 @@ map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o top_map
 par -w -intstyle ise -ol high -t 1 top_map.ncd top.ncd top.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf coun_60.ucf 
 bitgen -intstyle ise -f top.ut top.ncd 
+xst -intstyle ise -ifn "C:/ise/coun_60/top.xst" -ofn "C:/ise/coun_60/top.syr" 

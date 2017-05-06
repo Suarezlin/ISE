@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+sin_rom instance_name (
+    .clk(clk), 
+    .address(address), 
+    .sin_data(sin_data)
+    );
+
+

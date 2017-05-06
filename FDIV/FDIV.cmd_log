@@ -33,3 +33,4 @@ map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o FDIV_ma
 par -w -intstyle ise -ol high -t 1 FDIV_map.ncd FDIV.ncd FDIV.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FDIV.twx FDIV.ncd -o FDIV.twr FDIV.pcf -ucf FDIV.ucf 
 bitgen -intstyle ise -f FDIV.ut FDIV.ncd 
+xst -intstyle ise -ifn "C:/ise/FDIV/FDIV.xst" -ofn "C:/ise/FDIV/FDIV.syr" 

@@ -24,12 +24,12 @@ module x7seg(
 		output reg [6:0]a_to_g,
 		output reg [3:0]an
     );
-	 reg [3:0] one;
-	reg [3:0] ten;
-	reg [3:0] hun;
-	reg [3:0] count;
+	 reg [3:0] one=0;
+	reg [3:0] ten=0;
+	reg [3:0] hun=0;
+	reg [3:0] count=0;
 	reg [17:0] shift_reg=18'b000000000000000000;
-	reg [3:0] digit;
+	reg [3:0] digit=0;
 	wire [1:0] s;
 	reg [19:0]clkdiv=0;
 	assign s[1:0] = clkdiv[19:18]; 

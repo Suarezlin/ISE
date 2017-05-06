@@ -25,6 +25,7 @@ module GenerateTime(
 		output reg clk_1Hz
     );
 	 reg[24:0] jsq;
+	 initial jsq = 0;
 	 always @ (posedge clk or posedge clr or posedge load)
 		begin
 			if ( clr == 1)

@@ -1,0 +1,6 @@
+verilog work "x7seg.v"
+verilog work "GenerateTime.v"
+verilog work "Counter_10.v"
+verilog work "top.v"
+verilog work "test.v"
+verilog work "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v"

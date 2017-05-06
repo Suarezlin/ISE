@@ -1,0 +1,6 @@
+net "clk" loc=B8;
+net "sync" loc=B2;
+net "sclk" loc=B5;
+net "din" loc=A3;
+net "ctrl[1]" loc=M11;
+net "ctrl[0]" loc=M5;

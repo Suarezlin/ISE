@@ -1,0 +1,28 @@
+Command line:
+   test_DAC_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50728
+
+Sat May 06 20:20:32 2017
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 857.244 Meg
+
+ Total Signals          : 471
+ Total Nets             : 1285
+ Total Signal Drivers   : 191
+ Total Blocks           : 57
+ Total Primitive Blocks : 46
+ Total Processes        : 233
+ Total Traceable Variables  : 980
+ Total Scalar Nets and Variables : 60361
+
+ Total Simulation Time: 11.2188 sec
+
+ Current Memory Usage: 1329.89 Meg
+
+Sat May 06 20:21:27 2017
+

@@ -22,6 +22,7 @@ module counter(
 		input clk_1Hz,
 		output reg [7:0]q
     );
+	 initial q = 0;
 	 always @ ( posedge clk_1Hz )
 		begin
 			if ( q == 59 )
