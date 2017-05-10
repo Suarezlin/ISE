@@ -45,7 +45,7 @@ Clock Clock to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-chaoclk     |    8.812(R)|Clock_BUFGP       |   0.000|
+chaoclk     |    9.826(R)|Clock_BUFGP       |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Clock
@@ -53,8 +53,8 @@ Clock to Setup on destination clock Clock
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clock          |    8.236|         |         |         |
-echo           |    3.769|    3.769|         |         |
+Clock          |    8.199|         |         |         |
+echo           |    4.427|    4.427|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock echo
@@ -62,11 +62,11 @@ Clock to Setup on destination clock echo
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-echo           |         |         |         |    8.537|
+echo           |         |         |         |    8.561|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon May 01 12:21:54 2017 
+Analysis completed Wed May 10 12:59:43 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:

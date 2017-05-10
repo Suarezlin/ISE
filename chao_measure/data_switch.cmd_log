@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj chao_measure -o C:/ise/chao_measure/data_switch.tfi -lib work C:/ise/chao_measure//data_switch.v -module data_switch -template C:/Xilinx/13.4/ISE_DS/ISE//data/tfi.tft -deleteonerror 

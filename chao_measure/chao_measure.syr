@@ -4,13 +4,13 @@ Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.46 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.46 secs
  
 --> Reading design: chao_measure.prj
 
@@ -111,8 +111,12 @@ Compiling verilog file "DistanceMeasure.v" in library work
 Module <x7seg> compiled
 Compiling verilog file "DevideFrequency.v" in library work
 Module <DIstanceMeasure> compiled
-Compiling verilog file "chao_measure.v" in library work
+Compiling verilog file "data_switch.v" in library work
 Module <DevideFrequency> compiled
+Compiling verilog file "datas.v" in library work
+Module <data_switch> compiled
+Compiling verilog file "chao_measure.v" in library work
+Module <datas> compiled
 Module <chao_measure> compiled
 No errors in compilation
 Analysis of file <"chao_measure.prj"> succeeded.
@@ -127,6 +131,10 @@ Analyzing hierarchy for module <DevideFrequency> in library <work>.
 
 Analyzing hierarchy for module <DIstanceMeasure> in library <work>.
 
+Analyzing hierarchy for module <datas> in library <work>.
+
+Analyzing hierarchy for module <data_switch> in library <work>.
+
 Analyzing hierarchy for module <x7seg> in library <work>.
 
 Analyzing hierarchy for module <x7segdot> in library <work>.
@@ -136,7 +144,7 @@ Analyzing hierarchy for module <x7segdot> in library <work>.
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <chao_measure>.
-WARNING:Xst:2319 - "chao_measure.v" line 37: Signal seg in initial block is partially initialized. The initialization will be ignored.
+WARNING:Xst:2319 - "chao_measure.v" line 41: Signal seg in initial block is partially initialized. The initialization will be ignored.
 Module <chao_measure> is correct for synthesis.
  
 Analyzing module <DevideFrequency> in library <work>.
@@ -144,6 +152,13 @@ Module <DevideFrequency> is correct for synthesis.
  
 Analyzing module <DIstanceMeasure> in library <work>.
 Module <DIstanceMeasure> is correct for synthesis.
+ 
+Analyzing module <datas> in library <work>.
+Module <datas> is correct for synthesis.
+ 
+Analyzing module <data_switch> in library <work>.
+WARNING:Xst:2320 - "data_switch.v" line 29: Value for signal out in initial block is not constant. The initialization will be ignored.
+Module <data_switch> is correct for synthesis.
  
 Analyzing module <x7seg> in library <work>.
 Module <x7seg> is correct for synthesis.
@@ -197,6 +212,22 @@ Synthesizing Unit <DIstanceMeasure>.
 Unit <DIstanceMeasure> synthesized.
 
 
+Synthesizing Unit <datas>.
+    Related source file is "datas.v".
+    Found 16-bit register for signal <save_data>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <datas> synthesized.
+
+
+Synthesizing Unit <data_switch>.
+    Related source file is "data_switch.v".
+    Found 16-bit register for signal <out>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <data_switch> synthesized.
+
+
 Synthesizing Unit <x7seg>.
     Related source file is "x7seg.v".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -219,9 +250,9 @@ Synthesizing Unit <chao_measure>.
     Related source file is "chao_measure.v".
     Found 4-bit register for signal <an>.
     Found 8-bit register for signal <seg>.
-    Found 1-of-4 decoder for signal <an$mux0000> created at line 89.
+    Found 1-of-4 decoder for signal <an$mux0000> created at line 106.
     Found 2-bit up counter for signal <count>.
-    Found 8-bit 4-to-1 multiplexer for signal <seg$mux0000> created at line 89.
+    Found 8-bit 4-to-1 multiplexer for signal <seg$mux0000> created at line 106.
     Summary:
 	inferred   1 Counter(s).
 	inferred  12 D-type flip-flop(s).
@@ -244,9 +275,9 @@ Macro Statistics
  16-bit up counter                                     : 2
  2-bit up counter                                      : 1
  5-bit up counter                                      : 3
-# Registers                                            : 26
+# Registers                                            : 28
  1-bit register                                        : 21
- 16-bit register                                       : 3
+ 16-bit register                                       : 5
  4-bit register                                        : 1
  8-bit register                                        : 1
 # Comparators                                          : 4
@@ -278,8 +309,8 @@ Macro Statistics
  16-bit up counter                                     : 2
  2-bit up counter                                      : 1
  5-bit up counter                                      : 3
-# Registers                                            : 81
- Flip-Flops                                            : 81
+# Registers                                            : 113
+ Flip-Flops                                            : 113
 # Comparators                                          : 4
  16-bit comparator greater                             : 3
  16-bit comparator lessequal                           : 1
@@ -298,9 +329,13 @@ Optimizing unit <chao_measure> ...
 
 Optimizing unit <DIstanceMeasure> ...
 
+Optimizing unit <datas> ...
+
+Optimizing unit <data_switch> ...
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block chao_measure, actual ratio is 13.
+Found area constraint ratio of 100 (+ 5) on block chao_measure, actual ratio is 15.
 
 Final Macro Processing ...
 
@@ -308,8 +343,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 130
- Flip-Flops                                            : 130
+# Registers                                            : 162
+ Flip-Flops                                            : 162
 
 =========================================================================
 
@@ -335,16 +370,16 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 17
+# IOs                              : 19
 
 Cell Usage :
-# BELS                             : 401
+# BELS                             : 417
 #      GND                         : 1
 #      INV                         : 14
 #      LUT1                        : 48
 #      LUT2                        : 50
 #      LUT2_L                      : 1
-#      LUT3                        : 23
+#      LUT3                        : 39
 #      LUT3_D                      : 3
 #      LUT4                        : 73
 #      LUT4_D                      : 2
@@ -353,19 +388,19 @@ Cell Usage :
 #      MUXF5                       : 15
 #      VCC                         : 1
 #      XORCY                       : 76
-# FlipFlops/Latches                : 130
-#      FD                          : 26
+# FlipFlops/Latches                : 162
+#      FD                          : 42
 #      FD_1                        : 16
 #      FDC_1                       : 16
-#      FDE                         : 4
+#      FDE                         : 20
 #      FDE_1                       : 16
 #      FDR                         : 49
 #      FDS                         : 3
 # Clock Buffers                    : 3
 #      BUFG                        : 2
 #      BUFGP                       : 1
-# IO Buffers                       : 16
-#      IBUF                        : 1
+# IO Buffers                       : 18
+#      IBUF                        : 3
 #      OBUF                        : 15
 =========================================================================
 
@@ -374,11 +409,11 @@ Device utilization summary:
 
 Selected Device : 3s100ecp132-4 
 
- Number of Slices:                      131  out of    960    13%  
- Number of Slice Flip Flops:            130  out of   1920     6%  
- Number of 4 input LUTs:                217  out of   1920    11%  
- Number of IOs:                          17
- Number of bonded IOBs:                  17  out of     83    20%  
+ Number of Slices:                      150  out of    960    15%  
+ Number of Slice Flip Flops:            162  out of   1920     8%  
+ Number of 4 input LUTs:                233  out of   1920    12%  
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of     83    22%  
  Number of GCLKs:                         3  out of     24    12%  
 
 ---------------------------
@@ -402,9 +437,9 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-U2/clk_1MHz                        | NONE(seg_0)            | 14    |
+U2/clk_1MHz                        | NONE(an_3)             | 14    |
 U1/clk_1MHz                        | NONE(U2/clk_1MHz)      | 6     |
-U0/clk_1MHz1                       | BUFG                   | 39    |
+U0/clk_1MHz1                       | BUFG                   | 71    |
 Clock                              | BUFGP                  | 23    |
 echo                               | IBUF+BUFG              | 32    |
 U3/chaoclk                         | NONE(U3/temp_1)        | 16    |
@@ -480,7 +515,7 @@ Delay:               3.983ns (Levels of Logic = 2)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'U0/clk_1MHz1'
   Clock period: 5.149ns (frequency: 194.212MHz)
-  Total number of paths / destination ports: 459 / 45
+  Total number of paths / destination ports: 507 / 77
 -------------------------------------------------------------------------
 Delay:               5.149ns (Levels of Logic = 2)
   Source:            U3/count1_4 (FF)
@@ -628,6 +663,26 @@ Offset:              4.629ns (Levels of Logic = 2)
                                        (61.2% logic, 38.8% route)
 
 =========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'U0/clk_1MHz1'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              3.439ns (Levels of Logic = 2)
+  Source:            ctrl (PAD)
+  Destination:       U9/out_15 (FF)
+  Destination Clock: U0/clk_1MHz1 rising
+
+  Data Path: ctrl to U9/out_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  ctrl_IBUF (ctrl_IBUF)
+     LUT3:I0->O            1   0.704   0.000  U9/out_mux0000<9>1 (U9/out_mux0000<9>)
+     FD:D                      0.308          U9/out_9
+    ----------------------------------------
+    Total                      3.439ns (2.230ns logic, 1.209ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'U0/clk_1MHz1'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
@@ -706,14 +761,14 @@ Offset:              4.283ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 4.04 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.00 secs
  
 --> 
 
-Total memory usage is 250420 kilobytes
+Total memory usage is 250868 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

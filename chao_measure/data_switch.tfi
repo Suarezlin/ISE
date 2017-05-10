@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+data_switch instance_name (
+    .clk(clk), 
+    .ctrl(ctrl), 
+    .Dis(Dis), 
+    .save_data(save_data), 
+    .out(out)
+    );
+
+

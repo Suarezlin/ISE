@@ -1,7 +1,7 @@
 #Release 13.4 - par O.87xf (nt)
 #Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-#Mon May 01 12:21:51 2017
+#Wed May 10 12:59:41 2017
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -25,7 +25,7 @@ A3,trig,IOB,IO_L11P_0,OUTPUT,LVCMOS25*,0,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 A4,,,NC,,,,,,,,,,,,
 A5,,,VCCAUX,,,,,,,,2.5,,,,
 A6,,,VCCO_0,,,0,,,,,2.50,,,,
-A7,,DIFFM,IO_L07P_0/GCLK10,UNUSED,,0,,,,,,,,,
+A7,opt,IBUF,IO_L07P_0/GCLK10,INPUT,LVCMOS25*,0,,,,NONE,,LOCATED,NO,NONE,
 A8,,,GND,,,,,,,,,,,,
 A9,,DIFFS,IO_L05N_0/GCLK7,UNUSED,,0,,,,,,,,,
 A10,,DIFFM,IO_L04P_0/GCLK4,UNUSED,,0,,,,,,,,,
@@ -147,7 +147,7 @@ P7,,DIFFS,IO_L06N_2/D1/GCLK3,UNUSED,,2,,,,,,,,,
 P8,,DIFFM,IO_L07P_2/M0,UNUSED,,2,,,,,,,,,
 P9,,,VCCAUX,,,,,,,,2.5,,,,
 P10,,,NC,,,,,,,,,,,,
-P11,,IBUF,IP/VREF_2,UNUSED,,2,,,,,,,,,
+P11,ctrl,IBUF,IP/VREF_2,INPUT,LVCMOS25*,2,,,,NONE,,LOCATED,NO,NONE,
 P12,seg<4>,IOB,IO_L11P_2/VS0/A17,OUTPUT,LVCMOS25*,2,12,SLOW,NONE**,,,LOCATED,NO,NONE,
 P13,,,DONE,,,,,,,,,,,,
 P14,,,GND,,,,,,,,,,,,

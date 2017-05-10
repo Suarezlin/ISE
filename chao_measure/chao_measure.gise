@@ -73,6 +73,10 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="chao_measure_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="chao_measure_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="chao_measure_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="data_switch.tfi"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="datas.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="datas.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="datas.tfi"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="est_chaomeasure_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="est_chaomeasure_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="est_chaomeasure_isim_beh.wdb"/>
@@ -192,10 +196,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1494073491" xil_pn:in_ck="-595197715461987473" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="3680052246672250785" xil_pn:start_ts="1494073485">
+    <transform xil_pn:end_ts="1494392051" xil_pn:in_ck="-5011522503675096625" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="3680052246672250785" xil_pn:start_ts="1494392043">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="chao_measure.lso"/>
       <outfile xil_pn:name="chao_measure.ngc"/>
@@ -208,25 +214,22 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1493612328" xil_pn:in_ck="5806470195510999192" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7942651806304320306" xil_pn:start_ts="1493612328">
+    <transform xil_pn:end_ts="1494392366" xil_pn:in_ck="5806470195510999192" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7942651806304320306" xil_pn:start_ts="1494392366">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1493612501" xil_pn:in_ck="6051574168271927274" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1346947214383745393" xil_pn:start_ts="1493612497">
+    <transform xil_pn:end_ts="1494392370" xil_pn:in_ck="6051574168271927274" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1346947214383745393" xil_pn:start_ts="1494392366">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="chao_measure.bld"/>
       <outfile xil_pn:name="chao_measure.ngd"/>
       <outfile xil_pn:name="chao_measure_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1493612505" xil_pn:in_ck="2226245073058732523" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1493612501">
+    <transform xil_pn:end_ts="1494392374" xil_pn:in_ck="2226245073058732523" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1494392370">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -239,11 +242,10 @@
       <outfile xil_pn:name="chao_measure_summary.xml"/>
       <outfile xil_pn:name="chao_measure_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1493612515" xil_pn:in_ck="3188283956091932804" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1493612505">
+    <transform xil_pn:end_ts="1494392385" xil_pn:in_ck="3188283956091932804" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1494392374">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="chao_measure.ncd"/>
       <outfile xil_pn:name="chao_measure.pad"/>
@@ -255,12 +257,9 @@
       <outfile xil_pn:name="chao_measure_pad.txt"/>
       <outfile xil_pn:name="chao_measure_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1493612522" xil_pn:in_ck="5806470195510991567" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1493612515">
+    <transform xil_pn:end_ts="1494392391" xil_pn:in_ck="5806470195510991567" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1494392385">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="chao_measure.bgn"/>
       <outfile xil_pn:name="chao_measure.bit"/>
@@ -270,10 +269,9 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1493612515" xil_pn:in_ck="9107595651042546023" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1493612513">
+    <transform xil_pn:end_ts="1494392385" xil_pn:in_ck="9107595651042546023" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1494392382">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="chao_measure.twr"/>
       <outfile xil_pn:name="chao_measure.twx"/>

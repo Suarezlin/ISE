@@ -11,11 +11,11 @@
 <msg type="warning" file="Place" num="1019" delta="old" >A clock IOB / clock component pair have been found that are not placed at an optimal clock IOB / clock site pair. The clock component &lt;<arg fmt="%s" index="1">echo_IBUF_BUFG</arg>&gt; is placed at site &lt;<arg fmt="%s" index="2">BUFGMUX_X1Y10</arg>&gt;. The IO component &lt;<arg fmt="%s" index="3">echo</arg>&gt; is placed at site &lt;<arg fmt="%s" index="4">B2</arg>&gt;.  This will not allow the use of the fast path between the IO and the Clock buffer. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN &lt;<arg fmt="%s" index="5">echo.PAD</arg>&gt; allowing your design to continue. This constraint disables all clock placer rules related to the specified COMP.PIN. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
 </msg>
 
-<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">U3/chaoclk</arg> may have excessive skew because 
+<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">U3/chaoclk</arg> may have excessive skew because 
    <arg fmt="%d" index="2">0</arg> CLK pins and <arg fmt="%d" index="3">2</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 
-<msg type="warning" file="Route" num="455" delta="new" >CLK Net:<arg fmt="%s" index="1">U1/clk_1MHz</arg> may have excessive skew because 
+<msg type="warning" file="Route" num="455" delta="old" >CLK Net:<arg fmt="%s" index="1">U1/clk_1MHz</arg> may have excessive skew because 
    <arg fmt="%d" index="2">0</arg> CLK pins and <arg fmt="%d" index="3">1</arg> NON_CLK pins failed to route using a CLK template.
 </msg>
 

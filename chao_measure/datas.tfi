@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+datas instance_name (
+    .clk(clk), 
+    .opt(opt), 
+    .Dis(Dis), 
+    .save_data(save_data)
+    );
+
+

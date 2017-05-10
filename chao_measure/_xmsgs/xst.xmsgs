@@ -5,7 +5,10 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="2319" delta="old" >&quot;<arg fmt="%s" index="1">chao_measure.v</arg>&quot; line <arg fmt="%d" index="2">37</arg>: Signal <arg fmt="%s" index="3">seg</arg> in initial block is partially initialized. The initialization will be ignored.
+<msg type="warning" file="Xst" num="2319" delta="new" >&quot;<arg fmt="%s" index="1">chao_measure.v</arg>&quot; line <arg fmt="%d" index="2">41</arg>: Signal <arg fmt="%s" index="3">seg</arg> in initial block is partially initialized. The initialization will be ignored.
+</msg>
+
+<msg type="warning" file="Xst" num="2320" delta="new" >&quot;<arg fmt="%s" index="1">data_switch.v</arg>&quot; line <arg fmt="%d" index="2">29</arg>: Value for signal <arg fmt="%s" index="3">out</arg> in initial block is not constant. The initialization will be ignored.
 </msg>
 
 <msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clk</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.

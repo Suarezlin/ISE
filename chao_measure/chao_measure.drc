@@ -1,7 +1,7 @@
 Release 13.4 Drc O.87xf (nt)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
 
-Mon May 01 12:21:57 2017
+Wed May 10 12:59:46 2017
 
 drc -z chao_measure.ncd chao_measure.pcf
 

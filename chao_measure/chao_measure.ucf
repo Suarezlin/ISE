@@ -16,3 +16,5 @@ net "trig" loc=A3;
 NET "echo" CLOCK_DEDICATED_ROUTE = FALSE;
 net "echo" loc=B2;
 net "chaoclk" loc=M5;
+net "opt" loc=A7;
+net "ctrl" loc=P11;
